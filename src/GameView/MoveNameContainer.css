@@ -1,0 +1,25 @@
+.moveNameContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: stretch;
+  padding: 1em 0 1em 0;
+}
+
+.moveName {
+  flex: 0 1 48%;
+  text-align: center;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 5vw;
+  height: fit-content;
+  block-size: fit-content;
+  padding: 1px 1px 1px 1px;
+}
+
+.moveName:hover {
+  cursor: pointer;
+  border: 1px solid lightblue;
+  padding: 0 0 0 0;
+}

@@ -1,0 +1,55 @@
+.GameView {
+  height: 100%;
+  width: 100%;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.titles {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: red;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: inherit;
+  padding: inherit;
+}
+
+.versus-flex {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.charName {
+  flex: 0 1 48%;
+}
+
+.versus-title {
+  flex: none;
+  width: 4%;
+  font-style: italic;
+}
+
+.characterContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+.characterWindow {
+  flex: 0 1 48%;
+}
+
+.playerTwo {
+  transform: scaleX(-1);
+}
+
+.interactionContainer {
+  background-color: crimson;
+}
+
