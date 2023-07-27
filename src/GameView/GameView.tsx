@@ -2,41 +2,61 @@ import './GameView.css'
 import { useState } from 'react'
 import PlayerWindow from './PlayerWindow.tsx'
 import GameHelp from './GameHelp.tsx'
-import data from '../assets/data.json'
-import { CharData } from './interfaces.tsx'
+import move_data from '../assets/move_data.json'
+import misc_data from '../assets/misc_data.json'
+import { Move } from './interfaces.tsx'
 import MoveNameContainer from './MoveNameContainer.tsx'
+import GameEndContainer from './GameEndContainer.tsx'
+
+export enum gameStates {
+  start,
+  active,
+  end
+}
 
 function GameView() {
-  const [player1, setPlayer1] = useState({ charName: 'Millia_Rage', move: '5P'});
-  const [player2, setPlayer2] = useState({ charName: 'Anji_Mito', move: '5P'});
+
+  //const char1 = getRandomCharName();
+  const char1 = "Anji Mito";
+  const char2 = "Millia Rage";
+  //const char2 = getRandomCharName();
+  const [player1, setPlayer1] = useState({ charName: char1, move: getRandomMove(char1)});
+  const [player2, setPlayer2] = useState({ charName: char2, move: getRandomMove(char2)});
   const [victor, setVictor] = useState(0);
   const [userGuess, setUserGuess] = useState(0);
-  const [isGameEnd, setIsGameEnd] = useState(false);
-  const [isGameStart, setIsGameStart] = useState(true);
+  const [gameState, setGameState] = useState(gameStates.active);
 
-  if (isGameStart) {
-    setIsGameStart(false);
-    const char1 = getRandomCharData();
-    const char2 = getRandomCharData();
+  if (gameState === gameStates.start) {
+    //Randomly pick a character for each side
+    //Get move data for each character
+    //Randomly pick a move for each character
+    setGameState(gameStates.active);
+    const char1 = getRandomCharName();
+    const char2 = getRandomCharName();
     const move1 = getRandomMove(char1);
     const move2 = getRandomMove(char2);
+    setPlayer1({charName : char1, move: move1});
+    setPlayer2({charName : char2, move: move2});
   }
 
-  function getRandomCharData() {
-    const charData: CharData = data;
-    const charNames = Object.keys(charData);
+  function getRandomCharName() {
+    const charNames: string[] = misc_data.charas;
     const charName = charNames[Math.floor(Math.random() * charNames.length)];
-    return charData[charName];
+    return charName;
   }
 
-  function getRandomMove(charData: CharData) {
-    const moveNames = Object.keys(charData.moves);
-    const moveName = moveNames[Math.floor(Math.random() * moveNames.length)];
-    return charData.moves[moveName as keyof typeof charData.moves];
+  function getRandomMove(charName : string) : Move{
+    //Get json data from dustloop (https://www.dustloop.com/w/Special:CargoQuery)
+    const charaMoves : Move[] = move_data.filter((move) => {
+      return (move.chara === charName);
+    });
+    const resultMove = charaMoves[Math.floor(Math.random() * charaMoves.length)];
+    return resultMove;
   }
 
-  if (!isGameEnd && userGuess !== 0) {
-    setIsGameEnd(true);
+  //When user guesses
+  if (gameState === gameStates.active && userGuess !== 0) {
+    setGameState(gameStates.end);
     const victor = calculateVictor();
     setVictor(victor);
     if (victor === 0) {
@@ -51,12 +71,8 @@ function GameView() {
   }
 
   function calculateVictor() {
-    const charData: CharData = data;
-    const char1data = charData[player1.charName];
-    const char2data = charData[player2.charName];
-
-    const char1startup = char1data.moves[player1.move].startup;
-    const char2startup = char2data.moves[player2.move].startup;
+    const char1startup = player1.move.startup;
+    const char2startup = player2.move.startup;
 
     if (char1startup < char2startup) {
       return 1;
@@ -67,6 +83,16 @@ function GameView() {
     else {
       return 0;
     }
+  }
+
+  function isUserWinner() {
+    return (victor === userGuess);
+  }
+
+  function gameReset() {
+    setGameState(gameStates.start);
+    setVictor(0);
+    setUserGuess(0);
   }
 
   return (
@@ -88,6 +114,7 @@ function GameView() {
         </div>
       </div>
       <div className="interactionContainer">
+        {gameState === gameStates.end ? (<GameEndContainer winner={isUserWinner()} gameReset={gameReset}/>) : null}
         <MoveNameContainer char1={player1} char2={player2} userGuess={userGuess} setUserGuess={setUserGuess}/>
         <GameHelp />
       </div>

@@ -2,22 +2,23 @@ import './PlayerWindow.css';
 import { Player } from "./interfaces";
 
 function PlayerWindow (props : {player: Player, victor: boolean}) {
-  const name : string = props.player.charName;
-  const move : string = props.player.move;
+  const name : string = props.player.charName.replace(/ /g, '_');
+  const move : string = props.player.move.input;
 
   function MoveImage() {
-    const imageLoc = '/src/assets/' + name + '/' + move + '.png';
+    const imgName = props.player.move.imgName != null ? props.player.move.imgName : move
+    const imageLoc = '/src/assets/' + name + '/' + imgName + '.png';
     const image = <img src={imageLoc} alt={move} />;
 
     return (
-      <div className="MoveImage" style={{backgroundColor: props.victor ? 'green' : 'inherit'}}>
+      <div className="moveImage" style={{backgroundColor: props.victor ? 'green' : 'inherit'}}>
         {image}
       </div>
     )
   }
 
   return (
-    <div className="CharacterWindow">
+    <div className="characterWindow">
       <MoveImage />
     </div>
   );

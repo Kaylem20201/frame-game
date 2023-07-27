@@ -1,15 +1,12 @@
-export interface CharData { // derived from src/assets/charData.json
-  [charName: string]: {
-    'moves': {
-      [moveName: string]: {
-        'startup': number;
-      }
-    },
-    'wikiLink': string;
-  }
+export interface Move { 
+  chara : string;
+  input : string;
+  startup : number | string;
+  type : string;
+  ?imgName : string;
 }
 
 export interface Player {
   charName: string;
-  move: string;
+  move: Move;
 }

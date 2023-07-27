@@ -39,6 +39,7 @@ h1 {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
+  align-items: flex-end;
 }
 
 .characterWindow {

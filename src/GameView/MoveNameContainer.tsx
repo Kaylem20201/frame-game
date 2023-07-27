@@ -22,10 +22,10 @@ function MoveNameContainer(props: {
   return (
     <div className="moveNameContainer">
       <div className="moveName move1" onClick={userClick1}>
-        {char1.move}
+        {char1.move.input}
       </div>
       <div className="moveName move2" onClick={userClick2}>
-        {char2.move}
+        {char2.move.input}
       </div>
     </div>
   )
