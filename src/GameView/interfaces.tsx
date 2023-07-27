@@ -3,7 +3,7 @@ export interface Move {
   input : string;
   startup : number | string;
   type : string;
-  ?imgName : string;
+  imgName? : string;
 }
 
 export interface Player {
