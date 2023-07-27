@@ -7,7 +7,7 @@ function PlayerWindow (props : {player: Player, victor: boolean}) {
 
   function MoveImage() {
     const imgName = props.player.move.imgName != null ? props.player.move.imgName : move
-    const imageLoc = '/src/assets/' + name + '/' + imgName + '.png';
+    const imageLoc = '/' + name + '/' + imgName + '.png';
     const image = <img src={imageLoc} alt={move} />;
 
     return (
