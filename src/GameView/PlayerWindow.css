@@ -1,9 +1,0 @@
-.moveImage {
-  display: flex;
-  justify-content: center;
-}
-
-img {
-  max-height: 60vh;
-  max-width: 100%;
-}

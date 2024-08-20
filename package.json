@@ -12,7 +12,9 @@
   "dependencies": {
     "@eslint/config-array": "^0.18.0",
     "@eslint/object-schema": "^2.1.4",
+    "autoprefixer": "^10.4.20",
     "next": "^14.2.5",
+    "postcss": "^8.4.41",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
