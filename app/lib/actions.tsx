@@ -1,7 +1,7 @@
 'use server';
 import move_data from '@/app/assets/move_data.json'
 import misc_data from '@/app/assets/misc_data.json'
-import { Matchup, Move } from './interfaces';
+import { Matchup, Move, Player } from './interfaces';
 
 export async function genNewMatchup(): Promise<Matchup> {
   const charProm1 = getRandomCharName();
@@ -13,10 +13,7 @@ export async function genNewMatchup(): Promise<Matchup> {
   const [move1, move2] = await Promise.all([moveProm1, moveProm2]);
 
   const matchup: Matchup = {
-    player1: {
-      charName: char1,
-      move: move1
-    },
+    player1: Player,
     player2: {
       charName: char2,
       move: move2
@@ -26,6 +23,10 @@ export async function genNewMatchup(): Promise<Matchup> {
   return matchup;
 };
 
+export async function genRandomPlayer(): Promise<Player> {
+  const charName = await getRandomCharName();
+  const move = await getRandomMove();
+}
 
 export async function getRandomCharName(): Promise<string> {
   const charNames: string[] = misc_data.charas;

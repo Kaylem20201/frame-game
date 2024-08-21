@@ -1,7 +1,7 @@
 'use client'
 
 import './GameView.css'
-import { useState, use } from 'react'
+import { useState, use, useTransition } from 'react'
 import PlayerWindow from './PlayerWindow'
 import GameHelp from './GameHelp'
 import MoveNameContainer from './MoveNameContainer'
@@ -18,7 +18,7 @@ export enum gameStates {
 const initialGameState: gameStates = gameStates.active
 const initialVictor = 0;
 const initialUserGuess = 0;
-const initialMatchup: Matchup = use(genNewMatchup());
+const initialMatchup: Matchup | null = null;
 
 function GameView() {
 
@@ -27,6 +27,13 @@ function GameView() {
   const [victor, setVictor] = useState(initialVictor);
   const [userGuess, setUserGuess] = useState(initialUserGuess);
 
+  const [isPending, startTransition] = useTransition();
+
+  function initializeGame() {
+    startTransition(async () => {
+      setMatchup(await genNewMatchup());
+    });
+  }
 
   //When user guesses
   function onUserGuess() {
@@ -47,8 +54,8 @@ function GameView() {
   }
 
   function calculateVictor() {
-    const char1startup = matchup.player1?.moveData.startup;
-    const char2startup = matchup.player2?.moveData.startup;
+    const char1startup = matchup.player1.moveData.startup;
+    const char2startup = matchup.player2.moveData.startup;
 
     if (char1startup < char2startup) {
       return 1;
@@ -74,7 +81,7 @@ function GameView() {
   }
 
   return (
-    <div className="GameView">
+    <div className="GameView" onLoad={initializeGame} aria-disabled={isPending}>
       <div className="titles">
         <h1>Matchup</h1>
         <div className="versus-flex">

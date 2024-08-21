@@ -1,11 +1,13 @@
 export interface Player {
-  charName: string;
-  moveData: {
-    input: string;
-    type: string;
-    startup: number;
-  }
-  imgName?: string;
+  charName: string,
+  moveData: Move,
+  imgName?: string
+}
+
+export interface Move {
+  input: string,
+  type: string,
+  startup: number
 }
 
 export interface Matchup {
