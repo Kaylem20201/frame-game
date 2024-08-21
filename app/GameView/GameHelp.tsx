@@ -25,7 +25,7 @@ function GameHelp() {
             <li>Assume both attacks would hit the opponent.</li>
             <li>Assume that the attack would hit on the first possible active frame.</li>
           </ul>
-          <strong>Which character lands their attack?</strong>
+          <p><strong>Which character lands their attack?</strong></p>
         </div>
       </div>
     )

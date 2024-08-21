@@ -1,5 +1,5 @@
 import './MainViewport.css';
-import GameView from "./GameView/GameView.tsx";
+import GameView from "./GameView/GameView";
 
 function MainViewport() {
   return (
