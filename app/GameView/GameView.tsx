@@ -1,12 +1,14 @@
+'use client'
+
 import './GameView.css'
 import { useState } from 'react'
-import PlayerWindow from './PlayerWindow.tsx'
-import GameHelp from './GameHelp.tsx'
+import PlayerWindow from './PlayerWindow'
+import GameHelp from './GameHelp'
 import move_data from '../assets/move_data.json'
 import misc_data from '../assets/misc_data.json'
-import { Move } from './interfaces.tsx'
-import MoveNameContainer from './MoveNameContainer.tsx'
-import GameEndContainer from './GameEndContainer.tsx'
+import { Move } from './interfaces'
+import MoveNameContainer from './MoveNameContainer'
+import GameEndContainer from './GameEndContainer'
 
 export enum gameStates {
   start,
@@ -20,8 +22,8 @@ function GameView() {
   const char1 = "Anji Mito";
   const char2 = "Millia Rage";
   //const char2 = getRandomCharName();
-  const [player1, setPlayer1] = useState({ charName: char1, move: getRandomMove(char1)});
-  const [player2, setPlayer2] = useState({ charName: char2, move: getRandomMove(char2)});
+  const [player1, setPlayer1] = useState({ charName: char1, move: getRandomMove(char1) });
+  const [player2, setPlayer2] = useState({ charName: char2, move: getRandomMove(char2) });
   const [victor, setVictor] = useState(0);
   const [userGuess, setUserGuess] = useState(0);
   const [gameState, setGameState] = useState(gameStates.active);
@@ -35,8 +37,8 @@ function GameView() {
     const char2 = getRandomCharName();
     const move1 = getRandomMove(char1);
     const move2 = getRandomMove(char2);
-    setPlayer1({charName : char1, move: move1});
-    setPlayer2({charName : char2, move: move2});
+    setPlayer1({ charName: char1, move: move1 });
+    setPlayer2({ charName: char2, move: move2 });
   }
 
   function getRandomCharName() {
@@ -45,9 +47,9 @@ function GameView() {
     return charName;
   }
 
-  function getRandomMove(charName : string) : Move{
+  function getRandomMove(charName: string): Move {
     //Get json data from dustloop (https://www.dustloop.com/w/Special:CargoQuery)
-    const charaMoves : Move[] = move_data.filter((move) => {
+    const charaMoves: Move[] = move_data.filter((move) => {
       return (move.chara === charName);
     });
     const resultMove = charaMoves[Math.floor(Math.random() * charaMoves.length)];
@@ -114,8 +116,8 @@ function GameView() {
         </div>
       </div>
       <div className="interactionContainer">
-        {gameState === gameStates.end ? (<GameEndContainer winner={isUserWinner()} gameReset={gameReset}/>) : null}
-        <MoveNameContainer char1={player1} char2={player2} userGuess={userGuess} setUserGuess={setUserGuess}/>
+        {gameState === gameStates.end ? (<GameEndContainer winner={isUserWinner()} gameReset={gameReset} />) : null}
+        <MoveNameContainer char1={player1} char2={player2} userGuess={userGuess} setUserGuess={setUserGuess} />
         <GameHelp />
       </div>
     </div>
