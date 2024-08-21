@@ -3,11 +3,12 @@ export interface Player {
   moveData: {
     input: string;
     type: string;
+    startup: number;
   }
   imgName?: string;
 }
 
 export interface Matchup {
-  player1?: Player,
-  player2?: Player
+  player1: Player,
+  player2: Player
 }
