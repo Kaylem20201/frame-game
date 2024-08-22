@@ -1,44 +1,39 @@
 'use server';
-import move_data from '@/app/assets/move_data.json'
-import misc_data from '@/app/assets/misc_data.json'
 import { Matchup, Move, Player } from './interfaces';
+import { gameAbbreviations, getCharacterList, getCharacterMoves } from './fetching';
 
-export async function genNewMatchup(): Promise<Matchup> {
-  const charProm1 = getRandomCharName();
-  const charProm2 = getRandomCharName();
-  const [char1, char2] = await Promise.all([charProm1, charProm2]);
-
-  const moveProm1 = getRandomMove(char1);
-  const moveProm2 = getRandomMove(char2);
-  const [move1, move2] = await Promise.all([moveProm1, moveProm2]);
+export async function genNewMatchup(game: gameAbbreviations): Promise<Matchup> {
+  const player1prom = genRandomPlayer(game);
+  const player2prom = genRandomPlayer(game);
+  const [player1, player2] = await Promise.all([player1prom, player2prom]);
 
   const matchup: Matchup = {
-    player1: Player,
-    player2: {
-      charName: char2,
-      move: move2
-    }
+    player1: player1,
+    player2: player2
   }
 
   return matchup;
 };
 
-export async function genRandomPlayer(): Promise<Player> {
-  const charName = await getRandomCharName();
-  const move = await getRandomMove();
+async function genRandomPlayer(game: gameAbbreviations): Promise<Player> {
+  const charName = await getRandomCharName(game);
+  const move = await getRandomMove(game, charName);
+
+  return {
+    charName,
+    moveData: move
+  }
 }
 
-export async function getRandomCharName(): Promise<string> {
-  const charNames: string[] = misc_data.charas;
+async function getRandomCharName(game: gameAbbreviations): Promise<string> {
+  const charNames = await getCharacterList(game);
   const charName = charNames[Math.floor(Math.random() * charNames.length)];
   return charName;
 }
 
-export async function getRandomMove(charName: string): Promise<Move> {
-  //Get json data from dustloop (https://www.dustloop.com/w/Special:CargoQuery)
-  const charaMoves: Move[] = move_data.filter((move) => {
-    return (move.chara === charName);
-  });
+async function getRandomMove(game: gameAbbreviations, charName: string): Promise<Move> {
+  const charaMoves = await getCharacterMoves(game, charName);
+  if (!charaMoves) throw new Error();
   const resultMove = charaMoves[Math.floor(Math.random() * charaMoves.length)];
   return resultMove;
 }
