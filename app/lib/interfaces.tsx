@@ -7,7 +7,8 @@ export interface Player {
 export interface Move {
   input: string,
   type: string,
-  startup: number
+  startup: number,
+  imagePaths: string[]
 }
 
 export interface Matchup {
