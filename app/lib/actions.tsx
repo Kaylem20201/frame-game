@@ -1,6 +1,7 @@
 'use server';
 import { Matchup, Move, Player } from './interfaces';
-import { gameAbbreviations, getCharacterList, getCharacterMoves } from './fetching';
+import { getCharacterList, getCharacterMoves } from './fetching';
+import { gameAbbreviations } from './enums';
 
 export async function genNewMatchup(game: gameAbbreviations): Promise<Matchup> {
   const player1prom = genRandomPlayer(game);
