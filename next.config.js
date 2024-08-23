@@ -8,7 +8,7 @@ const nextConfig = {
 		remotePatterns: [
 			{
 				protocol: 'https',
-				hostname: 'dustloop.com',
+				hostname: 'www.dustloop.com',
 				port: '',
 			}
 		]
