@@ -1,15 +1,14 @@
 'use server';
 
 import { Move } from "./interfaces";
-
-export enum gameAbbreviations {
-  Strive = "GGST"
-}
+import { gameAbbreviations } from "./enums";
 
 const baseQueryUrl = "https://www.dustloop.com/wiki/index.php?title=Special:CargoExport";
 const baseImageUrl = "https://www.dustloop.com/w/Special:FilePath/";
 const defaultOptions = [
   ["format", "json"],
+  ["order by", ""],
+  ["limit", "100"]
 ];
 
 export async function buildQuery(queryOptions: [string, string][]): Promise<string> {
@@ -70,18 +69,23 @@ export async function getMovesUrl(game: gameAbbreviations, charName: string): Pr
 
   const where = [
     "chara = '" + charName + "' AND",
-    "startup NOT REGEXP '[^0-9]'", //Ensures we don't get moves with complex frame data
+    "startup NOT REGEXP '[^0-9]' AND", //Ensures we don't get moves with complex frame data
+    "active > 0 AND",
+    "damage > 0 AND", //Get actual attacks
+    "images HOLDS LIKE '%_%'" //Must have an image associated
   ]
   options.push(["where", where.map((clause) => {
     return moveTable + "." + clause;
   }).join(' ')]);
 
   return buildQuery(options);
+  //https://www.dustloop.com/wiki/index.php?title=Special:CargoExport&format=json&tables=MoveData_GGST&fields=MoveData_GGST.input,MoveData_GGST.startup,MoveData_GGST.type,MoveData_GGST.images&where=MoveData_GGST.chara%20=%20%27Testament%27%20AND%20MoveData_GGST.startup%20NOT%20REGEXP%20%27[^0-9]%27
 }
 
 export async function getCharacterMoves(game: gameAbbreviations, charName: string): Promise<Move[] | undefined> {
   // Returns all moves for a certain character
   const url = await getMovesUrl(game, charName);
+  console.log(url);
   const response = await fetch(url);
   if (!response.ok) {
     console.error(response.text);
