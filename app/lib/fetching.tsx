@@ -94,12 +94,15 @@ export async function getCharacterMoves(game: gameAbbreviations, charName: strin
   const responseObject = await response.json();
   const moveList: Move[] = [];
   for (const moveData of responseObject) {
-    const imagePaths: string[] = moveData.images;
+    const rawImagePaths: string[] = moveData.images;
+    const fullImagePaths = rawImagePaths.map((rawPath) => {
+      return baseImageUrl + rawPath;
+    })
     const move: Move = {
       startup: moveData.startup,
       input: moveData.input,
       type: moveData.input,
-      imagePaths: imagePaths
+      imagePaths: fullImagePaths
     };
     moveList.push(move);
   }

@@ -1,15 +1,20 @@
 import './GameEndContainer.css';
 
-function GameEndContainer(props: {
-  winner: boolean, 
-  gameReset : () => void
-}) {  
+interface GameEndProps {
+  isWinner: boolean,
+  resetGame: () => Promise<void>
+}
+
+function GameEndContainer({
+  isWinner,
+  resetGame
+}: GameEndProps) {
 
   return (
     <div className="gameEndContainer">
       <div className="gameEndPopup">
-        <h1>{props.winner ? "You win!" : "You lose!"}</h1>
-        <div className="resetButton" onClick={props.gameReset}>Reset?</div>
+        <h1>{isWinner ? "You win!" : "You lose!"}</h1>
+        <div className="resetButton" onClick={resetGame}>Reset?</div>
       </div>
     </div>
   )

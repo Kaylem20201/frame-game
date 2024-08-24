@@ -1,32 +1,35 @@
-'use client'
-
-import { Player } from "@/app/lib/interfaces";
 import './MoveNameContainer.css'
+import { PlayerOption } from "../lib/enums";
 
-function MoveNameContainer(props: {
-  char1: Player,
-  char2: Player,
-  userGuess: number,
-}) {
+interface MoveNameProps {
+  input1: string | undefined,
+  input2: string | undefined,
+  onUserGuess: (userGuess: PlayerOption) => void
+}
 
-  const char1 = props.char1;
-  const char2 = props.char2;
+function MoveNameContainer({
+  input1,
+  input2,
+  onUserGuess
+}: MoveNameProps) {
 
-  function userClick1() {
-    props.userGuess = 1;
+  function handleClickP1() {
+    if (!(input1 && input2)) return;
+    onUserGuess(PlayerOption.player1);
   }
 
-  function userClick2() {
-    props.userGuess = 2;
+  function handleClickP2() {
+    if (!(input1 && input2)) return;
+    onUserGuess(PlayerOption.player2);
   }
 
   return (
     <div className="moveNameContainer">
-      <div className="moveName move1" onClick={userClick1}>
-        {char1.moveData.input}
+      <div className="moveName move1" onClick={handleClickP1}>
+        {input1 ? input1 : 'Loading...'}
       </div>
-      <div className="moveName move2" onClick={userClick2}>
-        {char2.moveData.input}
+      <div className="moveName move2" onClick={handleClickP2}>
+        {input2 ? input2 : 'Loading...'}
       </div>
     </div>
   )

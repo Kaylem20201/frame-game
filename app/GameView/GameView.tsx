@@ -1,115 +1,103 @@
 'use client'
 
 import './GameView.css'
-import { useState, use, useTransition, useEffect } from 'react'
-import GameHelp from './GameHelp'
-import { GameState, Matchup } from '../lib/interfaces'
+import { GameState } from '../lib/interfaces'
 import { genNewMatchup } from '../lib/actions'
-import { gameAbbreviations } from '@/app/lib/enums'
-import { MatchupView } from './MatchupView'
+import { GameAbbreviations, MatchStates, PlayerOption } from '../lib/enums';
+import MoveNameContainer from './MoveNameContainer';
+import GameEndContainer from './GameEndContainer';
+import PlayerWindow from './PlayerWindow';
+import { useActionState, useEffect, useState } from 'react';
 
-export enum matchStates {
-  start,
-  active,
-  end
+const initialGameState: GameState = {
+  matchup: undefined,
+  matchState: MatchStates.start,
+  victor: PlayerOption.na,
+  userGuess: PlayerOption.na,
+  dustloopGame: GameAbbreviations.Strive
 }
-
-export enum PlayerOption {
-  player1,
-  player2,
-  na
-}
-
-export enum GuessState {
-  correct,
-  incorrect,
-  na
-}
-
-const initialMatchState: matchStates = matchStates.active
-const initialVictor = PlayerOption.na;
-const initialUserGuess = PlayerOption.na;
-const initialMatchup: Matchup | undefined = undefined;
-const initialDustloopGame: gameAbbreviations = gameAbbreviations.Strive;
 
 function GameView() {
 
   console.log("Hi!");
 
-  const [matchup, setMatchup] = useState(initialMatchup);
-  const [matchState, setMatchState] = useState(initialMatchState);
-  const [victor, setVictor] = useState(initialVictor);
-  const [userGuess, setUserGuess] = useState(initialUserGuess);
-  const [dustloopGame, setDustloopGame] = useState(initialDustloopGame);
+  const [matchup, setMatchup] = useState(initialGameState.matchup);
+  const [matchState, setMatchState] = useState(initialGameState.matchState);
+  const [victor, setVictor] = useState(initialGameState.victor);
+  const [userGuess, setUserGuess] = useState(initialGameState.userGuess);
+  const [dustloopGame, setDustloopGame] = useState(initialGameState.dustloopGame);
 
   useEffect(() => {
-    initializeGame();
-  })
+    if (matchState === MatchStates.start) {
+      setMatchState(MatchStates.loading);
+      genNewMatchup(dustloopGame).then((matchup) => {
+        setMatchup(matchup);
+        setVictor(PlayerOption.na);
+        setUserGuess(PlayerOption.na);
+      });
+      setMatchState(MatchStates.active);
+    }
+  }, [matchState])
 
-  function initializeGame() {
-    console.log("Initializing game...");
-    gameReset();
-  }
 
   //When user guesses
-  function onUserGuess() {
-    if (matchState === matchStates.active && userGuess !== PlayerOption.na) {
-      const victor = calculateVictor();
-      setVictor(victor);
-      if (victor === PlayerOption.na) {
-        console.log('Tie!');
-      }
-      else if (userGuess === victor) {
-        console.log('Correct!');
-      }
-      else {
-        console.log('Wrong!');
-      }
-      setMatchState(matchStates.end);
-    }
+  function onUserGuess(userGuess: PlayerOption) {
+    setMatchState(MatchStates.loading);
+    setUserGuess(userGuess);
+    calculateVictor();
+    setMatchState(MatchStates.end);
+  }
+
+  const resetGame = async () => {
+    setMatchState(MatchStates.start);
   }
 
   function calculateVictor() {
+
     const char1startup = matchup?.player1.moveData.startup;
     const char2startup = matchup?.player2.moveData.startup;
 
-    if (!char1startup || !char2startup) return PlayerOption.na;
+    if (!char1startup || !char2startup) throw new Error("Invalid calculateVictor call");
 
     if (char1startup < char2startup) {
-      return PlayerOption.player1;
+      setVictor(PlayerOption.player1);
+      return;
     }
     else if (char2startup < char1startup) {
-      return PlayerOption.player2;
+      setVictor(PlayerOption.player2);
+      return;
     }
     else {
-      return PlayerOption.na;
+      setVictor(PlayerOption.tie);
+      return;
     }
   }
 
-  const gameReset = async () => {
-    setMatchState(matchStates.start);
-    setVictor(0);
-    setUserGuess(0);
-    setMatchup(await genNewMatchup(dustloopGame));
-    setMatchState(matchStates.active);
-  }
-
-  const gameState: GameState = {
-    matchup,
-    matchState,
-    victor,
-    userGuess,
-    setUserGuess,
-    dustloopGame,
-    resetFn: gameReset
-  }
-
-
   return (
-    <div className="GameView" onLoad={initializeGame} >
-      <MatchupView {...gameState} />
-      <GameHelp />
-    </div>
+    <>
+      {matchState === MatchStates.loading ? "Loading" : <>
+        <div className="titles">
+          <h1>Matchup</h1>
+          <div className="versus-flex">
+            <h2 className="charName">{matchup ? (matchup.player1.charName).replace(/_/g, ' ') : ''}</h2>
+            <h2 className="versus-title"> vs </h2>
+            <h2 className="charName">{matchup ? (matchup.player2.charName).replace(/_/g, ' ') : ''}</h2>
+          </div>
+        </div>
+        <div className="characterContainer">
+          <div className="playerOne characterWindow">
+            {matchup ? <PlayerWindow player={matchup.player1} victor={(victor === PlayerOption.player1) ? true : false} /> : null}
+          </div>
+          <div className="playerTwo characterWindow">
+            {matchup ? <PlayerWindow player={matchup.player2} victor={victor === PlayerOption.player2} /> : null}
+          </div>
+        </div>
+        <div className="interactionContainer">
+          {matchState === MatchStates.end ? (<GameEndContainer isWinner={userGuess === victor} resetGame={resetGame} />) : null}
+          <MoveNameContainer input1={matchup?.player1.moveData.input} input2={matchup?.player2.moveData.input} onUserGuess={onUserGuess} />
+        </div> </>
+      }
+    </>
   );
 }
 

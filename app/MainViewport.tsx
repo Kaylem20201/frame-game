@@ -1,7 +1,7 @@
 import './MainViewport.css';
 import GameView from "./GameView/GameView";
 
-function MainViewport() {
+async function MainViewport() {
   return (
     <div className="MainViewport">
       <GameView />

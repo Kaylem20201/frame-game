@@ -1,7 +1,7 @@
 import './GameHelp.css'
 import { useState } from 'react'
-import HelpIcon from '../assets/HelpIcon.tsx'
-import CloseIcon from '../assets/CloseIcon.tsx'
+import HelpIcon from '../assets/HelpIcon'
+import CloseIcon from '../assets/CloseIcon'
 
 
 
