@@ -1,6 +1,6 @@
 'use client'
 
-import './GameView.css'
+// import './GameView.css'
 import { GameState } from '../lib/interfaces'
 import { genNewMatchup } from '../lib/actions'
 import { GameAbbreviations, MatchStates, PlayerOption } from '../lib/enums';
@@ -75,13 +75,13 @@ function GameView() {
   }
 
   return (
-    <>
-      <div className="titles">
+    <section className="h-full">
+      <div className="titles text-3xl text-red-500 text-center w-full m-auto font-bold font-sans uppercase">
         <h1>Matchup</h1>
-        <div className="versus-flex">
-          <h2 className="charName">{matchup ? (matchup.player1.charName).replace(/_/g, ' ') : ''}</h2>
-          <h2 className="versus-title"> vs </h2>
-          <h2 className="charName">{matchup ? (matchup.player2.charName).replace(/_/g, ' ') : ''}</h2>
+        <div className="versus-flex flex flex-row flex-nowrap justify-center">
+          <h2 className="charName basis-5/12">{matchup ? (matchup.player1.charName).replace(/_/g, ' ') : ''}</h2>
+          <h2 className="versus-title w-min italic"> vs </h2>
+          <h2 className="charName basis-5/12">{matchup ? (matchup.player2.charName).replace(/_/g, ' ') : ''}</h2>
         </div>
       </div>
       <div className="characterContainer">
@@ -97,8 +97,7 @@ function GameView() {
         {matchState === MatchStates.end ? (<GameEndContainer isWinner={userGuess === victor} resetGame={resetGame} />) : null}
         <MoveNameContainer input1={matchup ? matchup.player1.moveData.input : 'Loading'} input2={matchup ? matchup.player2.moveData.input : 'Loading'} onUserGuess={onUserGuess} />
       </div>
-
-    </>
+    </section>
   );
 }
 
