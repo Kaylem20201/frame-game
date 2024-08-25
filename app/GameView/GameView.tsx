@@ -8,6 +8,7 @@ import MoveNameContainer from './MoveNameContainer';
 import GameEndContainer from './GameEndContainer';
 import PlayerWindow from './PlayerWindow';
 import { useEffect, useState } from 'react';
+import GameHelp from './GameHelp';
 
 const initialGameState: GameState = {
   matchup: undefined,
@@ -91,10 +92,12 @@ function GameView() {
           {matchup ? <PlayerWindow player={matchup.player2} victor={victor === PlayerOption.player2} /> : null}
         </div>
       </div>
-      <div className="interactionContainer">
+      <div className="interactionContainer center">
+        <GameHelp />
         {matchState === MatchStates.end ? (<GameEndContainer isWinner={userGuess === victor} resetGame={resetGame} />) : null}
         <MoveNameContainer input1={matchup ? matchup.player1.moveData.input : 'Loading'} input2={matchup ? matchup.player2.moveData.input : 'Loading'} onUserGuess={onUserGuess} />
       </div>
+
     </>
   );
 }
