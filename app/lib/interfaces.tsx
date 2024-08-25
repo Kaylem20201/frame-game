@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction } from "react"
-import { matchStates, PlayerOption, gameAbbreviations } from "./enums"
+import { MatchStates, PlayerOption, GameAbbreviations } from "./enums"
 
 export interface Player {
   charName: string,
@@ -21,8 +21,8 @@ export interface Matchup {
 
 export interface GameState {
   matchup: Matchup | undefined,
-  matchState: matchStates,
+  matchState: MatchStates,
   victor: PlayerOption,
   userGuess: PlayerOption,
-  dustloopGame: gameAbbreviations,
+  dustloopGame: GameAbbreviations,
 }
