@@ -7,7 +7,7 @@ import { GameAbbreviations, MatchStates, PlayerOption } from '../lib/enums';
 import MoveNameContainer from './MoveNameContainer';
 import GameEndContainer from './GameEndContainer';
 import PlayerWindow from './PlayerWindow';
-import { useActionState, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const initialGameState: GameState = {
   matchup: undefined,
@@ -75,28 +75,26 @@ function GameView() {
 
   return (
     <>
-      {matchState === MatchStates.loading ? "Loading" : <>
-        <div className="titles">
-          <h1>Matchup</h1>
-          <div className="versus-flex">
-            <h2 className="charName">{matchup ? (matchup.player1.charName).replace(/_/g, ' ') : ''}</h2>
-            <h2 className="versus-title"> vs </h2>
-            <h2 className="charName">{matchup ? (matchup.player2.charName).replace(/_/g, ' ') : ''}</h2>
-          </div>
+      <div className="titles">
+        <h1>Matchup</h1>
+        <div className="versus-flex">
+          <h2 className="charName">{matchup ? (matchup.player1.charName).replace(/_/g, ' ') : ''}</h2>
+          <h2 className="versus-title"> vs </h2>
+          <h2 className="charName">{matchup ? (matchup.player2.charName).replace(/_/g, ' ') : ''}</h2>
         </div>
-        <div className="characterContainer">
-          <div className="playerOne characterWindow">
-            {matchup ? <PlayerWindow player={matchup.player1} victor={(victor === PlayerOption.player1) ? true : false} /> : null}
-          </div>
-          <div className="playerTwo characterWindow">
-            {matchup ? <PlayerWindow player={matchup.player2} victor={victor === PlayerOption.player2} /> : null}
-          </div>
+      </div>
+      <div className="characterContainer">
+        <div className="playerOne characterWindow">
+          {matchup ? <PlayerWindow player={matchup.player1} victor={(victor === PlayerOption.player1) ? true : false} /> : null}
         </div>
-        <div className="interactionContainer">
-          {matchState === MatchStates.end ? (<GameEndContainer isWinner={userGuess === victor} resetGame={resetGame} />) : null}
-          <MoveNameContainer input1={matchup?.player1.moveData.input} input2={matchup?.player2.moveData.input} onUserGuess={onUserGuess} />
-        </div> </>
-      }
+        <div className="playerTwo characterWindow">
+          {matchup ? <PlayerWindow player={matchup.player2} victor={victor === PlayerOption.player2} /> : null}
+        </div>
+      </div>
+      <div className="interactionContainer">
+        {matchState === MatchStates.end ? (<GameEndContainer isWinner={userGuess === victor} resetGame={resetGame} />) : null}
+        <MoveNameContainer input1={matchup ? matchup.player1.moveData.input : 'Loading'} input2={matchup ? matchup.player2.moveData.input : 'Loading'} onUserGuess={onUserGuess} />
+      </div>
     </>
   );
 }

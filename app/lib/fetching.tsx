@@ -1,7 +1,7 @@
 'use server';
 
 import { Move } from "./interfaces";
-import { gameAbbreviations } from "./enums";
+import { GameAbbreviations } from "./enums";
 
 const baseQueryUrl = "https://www.dustloop.com/wiki/index.php?title=Special:CargoExport";
 const baseImageUrl = "https://www.dustloop.com/w/Special:FilePath/";
@@ -21,22 +21,25 @@ export async function buildQuery(queryOptions: [string, string][]): Promise<stri
   return baseQueryUrl + "&" + optionsString;
 }
 
-export async function getCharactersUrl(game: gameAbbreviations) {
+export async function getCharactersUrl(game: GameAbbreviations) {
   const options: [string, string][] = [];
-  const characterTable = game.toLowerCase().concat("Characters");
-  options.push(["tables", characterTable]);
+  const moveTable = "MoveData_" + game;
+  options.push(
+    ["tables", moveTable],
+    ["group by", moveTable + ".chara"]
+  );
 
   const fields = [
-    "name"
+    "chara"
   ];
   for (const field of fields) {
-    options.push(["fields", characterTable + "." + field]);
+    options.push(["fields", moveTable + "." + field]);
   }
 
   return buildQuery(options);
 }
 
-export async function getCharacterList(game: gameAbbreviations): Promise<string[]> {
+export async function getCharacterList(game: GameAbbreviations): Promise<string[]> {
   // Returns all characters for a certain game
   const url = await getCharactersUrl(game);
   const response = await fetch(url);
@@ -47,12 +50,13 @@ export async function getCharacterList(game: gameAbbreviations): Promise<string[
   const charObject = await response.json();
   const charNames = [];
   for (const character of charObject) {
-    charNames.push(character.name);
+    charNames.push(character.chara);
   }
+  console.log(charNames);
   return charNames;
 }
 
-export async function getMovesUrl(game: gameAbbreviations, charName: string): Promise<string> {
+export async function getMovesUrl(game: GameAbbreviations, charName: string): Promise<string> {
   const options: [string, string][] = [];
   const moveTable = "MoveData_" + game;
   options.push(["tables", moveTable]);
@@ -82,7 +86,7 @@ export async function getMovesUrl(game: gameAbbreviations, charName: string): Pr
   //https://www.dustloop.com/wiki/index.php?title=Special:CargoExport&format=json&tables=MoveData_GGST&fields=MoveData_GGST.input,MoveData_GGST.startup,MoveData_GGST.type,MoveData_GGST.images&where=MoveData_GGST.chara%20=%20%27Testament%27%20AND%20MoveData_GGST.startup%20NOT%20REGEXP%20%27[^0-9]%27
 }
 
-export async function getCharacterMoves(game: gameAbbreviations, charName: string): Promise<Move[] | undefined> {
+export async function getCharacterMoves(game: GameAbbreviations, charName: string): Promise<Move[] | undefined> {
   // Returns all moves for a certain character
   const url = await getMovesUrl(game, charName);
   console.log(url);
@@ -106,5 +110,6 @@ export async function getCharacterMoves(game: gameAbbreviations, charName: strin
     };
     moveList.push(move);
   }
+  if (moveList.length === 0) console.log("Empty move list: " + charName);
   return moveList;
 }

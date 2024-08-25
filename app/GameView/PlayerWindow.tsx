@@ -12,7 +12,7 @@ function PlayerWindow(props: { player: Player | undefined, victor: boolean }) {
     console.log(imagePaths);
     const imagePath = imagePaths ? imagePaths[0] : undefined;
     console.log(imagePath);
-    const image = imagePath ? <Image src={imagePath} fill={true} alt={name + " " + move} /> : null
+    const image = imagePath ? <img src={imagePath} alt={name + " " + move} /> : null
 
     return (
       <div className="moveImage" style={{ backgroundColor: props.victor ? 'green' : 'inherit' }}>
