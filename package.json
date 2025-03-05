@@ -10,7 +10,10 @@
     "test": "jest"
   },
   "dependencies": {
+    "@heroui/system": "^2.4.11",
+    "@heroui/theme": "^2.4.11",
     "autoprefixer": "^10.4.20",
+    "framer-motion": "^12.4.10",
     "next": "^14.2.5",
     "postcss": "^8.4.41",
     "react": "^18.2.0",
