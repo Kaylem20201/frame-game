@@ -10,10 +10,11 @@
 .helpButton {
   background-color: inherit;
   border: none;
-  scale: .75;
+  scale: 0.75;
 }
 
-.helpButton:hover, .closeButton:hover {
+.helpButton:hover,
+.closeButton:hover {
   cursor: pointer;
   fill: lightblue;
 }
@@ -22,25 +23,23 @@
   position: absolute;
   display: inline-block;
   right: 1em;
-  top: .5em;
+  top: 0.5em;
 }
 
 .helpWindow {
   position: absolute;
   background-color: inherit;
   border: 1px solid black;
-  padding: 0 1em 0 .5em;
+  padding: 0 1em 0 0.5em;
   border-radius: 5px;
   width: fit-content;
   height: fit-content;
   transform: translateY(-100%);
 }
 
-
-
 .helpText {
   display: flex;
-  font-family:'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 1.25em;
   flex-flow: column nowrap;
   justify-content: center;

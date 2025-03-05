@@ -10,7 +10,7 @@
   padding: 0;
   text-align: center;
   color: red;
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -53,4 +53,3 @@ h1 {
 .interactionContainer {
   background-color: crimson;
 }
-

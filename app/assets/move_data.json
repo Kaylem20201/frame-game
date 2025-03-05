@@ -1,2938 +1,2938 @@
 [
-    {
-        "chara": "Anji Mito",
-        "input": "2D",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Anji Mito",
-        "input": "2H",
-        "startup": 22,
-        "type": "normal"
-    },
-    {
-        "chara": "Anji Mito",
-        "input": "2K",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Anji Mito",
-        "input": "2P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Anji Mito",
-        "input": "2S",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Anji Mito",
-        "input": "5D",
-        "startup": 20,
-        "type": "normal"
-    },
-    {
-        "chara": "Anji Mito",
-        "input": "5H",
-        "startup": 15,
-        "type": "normal"
-    },
-    {
-        "chara": "Anji Mito",
-        "input": "5K",
-        "startup": 8,
-        "type": "normal"
-    },
-    {
-        "chara": "Anji Mito",
-        "input": "5P",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Anji Mito",
-        "input": "6H",
-        "startup": 16,
-        "type": "normal"
-    },
-    {
-        "chara": "Anji Mito",
-        "input": "6P",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Anji Mito",
-        "input": "c.S",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Anji Mito",
-        "input": "f.S",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Anji Mito",
-        "input": "j.D",
-        "startup": 8,
-        "type": "normal"
-    },
-    {
-        "chara": "Anji Mito",
-        "input": "j.H",
-        "startup": 13,
-        "type": "normal"
-    },
-    {
-        "chara": "Anji Mito",
-        "input": "j.K",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Anji Mito",
-        "input": "j.P",
-        "startup": 9,
-        "type": "normal"
-    },
-    {
-        "chara": "Anji Mito",
-        "input": "j.S",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Asuka R",
-        "input": "2D",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Asuka R",
-        "input": "2H",
-        "startup": 14,
-        "type": "normal"
-    },
-    {
-        "chara": "Asuka R",
-        "input": "2K",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Asuka R",
-        "input": "2P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Asuka R",
-        "input": "2S",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Asuka R",
-        "input": "5D",
-        "startup": 20,
-        "type": "normal"
-    },
-    {
-        "chara": "Asuka R",
-        "input": "5H",
-        "startup": 15,
-        "type": "normal"
-    },
-    {
-        "chara": "Asuka R",
-        "input": "5K",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Asuka R",
-        "input": "5P",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Asuka R",
-        "input": "6H",
-        "startup": 25,
-        "type": "normal"
-    },
-    {
-        "chara": "Asuka R",
-        "input": "6K",
-        "startup": 14,
-        "type": "normal"
-    },
-    {
-        "chara": "Asuka R",
-        "input": "6P",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Asuka R",
-        "input": "c.S",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Asuka R",
-        "input": "f.S",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Asuka R",
-        "input": "j.D",
-        "startup": 14,
-        "type": "normal"
-    },
-    {
-        "chara": "Asuka R",
-        "input": "j.H",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Asuka R",
-        "input": "j.K",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Asuka R",
-        "input": "j.P",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Asuka R",
-        "input": "j.S",
-        "startup": 9,
-        "type": "normal"
-    },
-    {
-        "chara": "Axl Low",
-        "input": "2D",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Axl Low",
-        "input": "2H",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Axl Low",
-        "input": "2K",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Axl Low",
-        "input": "2P",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Axl Low",
-        "input": "2S",
-        "startup": 9,
-        "type": "normal"
-    },
-    {
-        "chara": "Axl Low",
-        "input": "5D",
-        "startup": 20,
-        "type": "normal"
-    },
-    {
-        "chara": "Axl Low",
-        "input": "5H",
-        "startup": 16,
-        "type": "normal"
-    },
-    {
-        "chara": "Axl Low",
-        "input": "5K",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Axl Low",
-        "input": "5P",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Axl Low",
-        "input": "6H",
-        "startup": 27,
-        "type": "normal"
-    },
-    {
-        "chara": "Axl Low",
-        "input": "6K",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Axl Low",
-        "input": "6P",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Axl Low",
-        "input": "c.S",
-        "startup": 8,
-        "type": "normal"
-    },
-    {
-        "chara": "Axl Low",
-        "input": "f.S",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Axl Low",
-        "input": "j.D",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Axl Low",
-        "input": "j.H",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Axl Low",
-        "input": "j.K",
-        "startup": 8,
-        "type": "normal"
-    },
-    {
-        "chara": "Axl Low",
-        "input": "j.P",
-        "startup": 9,
-        "type": "normal"
-    },
-    {
-        "chara": "Axl Low",
-        "input": "j.S",
-        "startup": 14,
-        "type": "normal"
-    },
-    {
-        "chara": "Baiken",
-        "input": "2D",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Baiken",
-        "input": "2H",
-        "startup": 17,
-        "type": "normal"
-    },
-    {
-        "chara": "Baiken",
-        "input": "2K",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Baiken",
-        "input": "2P",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Baiken",
-        "input": "2S",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Baiken",
-        "input": "5D",
-        "startup": 20,
-        "type": "normal"
-    },
-    {
-        "chara": "Baiken",
-        "input": "5H",
-        "startup": 13,
-        "type": "normal"
-    },
-    {
-        "chara": "Baiken",
-        "input": "5K",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Baiken",
-        "input": "5P",
-        "startup": 4,
-        "type": "normal"
-    },
-    {
-        "chara": "Baiken",
-        "input": "6H",
-        "startup": 20,
-        "type": "normal"
-    },
-    {
-        "chara": "Baiken",
-        "input": "6K",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Baiken",
-        "input": "6P",
-        "startup": 9,
-        "type": "normal"
-    },
-    {
-        "chara": "Baiken",
-        "input": "c.S",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Baiken",
-        "input": "f.S",
-        "startup": 9,
-        "type": "normal"
-    },
-    {
-        "chara": "Baiken",
-        "input": "j.D",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Baiken",
-        "input": "j.H",
-        "startup": 15,
-        "type": "normal"
-    },
-    {
-        "chara": "Baiken",
-        "input": "j.K",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Baiken",
-        "input": "j.P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Baiken",
-        "input": "j.S",
-        "startup": 8,
-        "type": "normal"
-    },
-    {
-        "chara": "Bedman",
-        "input": "2D",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Bedman",
-        "input": "2H",
-        "startup": 16,
-        "type": "normal"
-    },
-    {
-        "chara": "Bedman",
-        "input": "2K",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Bedman",
-        "input": "2P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Bedman",
-        "input": "2S",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Bedman",
-        "input": "5D",
-        "startup": 20,
-        "type": "normal"
-    },
-    {
-        "chara": "Bedman",
-        "input": "5H",
-        "startup": 13,
-        "type": "normal"
-    },
-    {
-        "chara": "Bedman",
-        "input": "5K",
-        "startup": 8,
-        "type": "normal"
-    },
-    {
-        "chara": "Bedman",
-        "input": "5P",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Bedman",
-        "input": "6H",
-        "startup": 25,
-        "type": "normal"
-    },
-    {
-        "chara": "Bedman",
-        "input": "6P",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Bedman",
-        "input": "c.S",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Bedman",
-        "input": "f.S",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Bedman",
-        "input": "j.D",
-        "startup": 19,
-        "type": "normal"
-    },
-    {
-        "chara": "Bedman",
-        "input": "j.H",
-        "startup": 15,
-        "type": "normal"
-    },
-    {
-        "chara": "Bedman",
-        "input": "j.K",
-        "startup": 8,
-        "type": "normal"
-    },
-    {
-        "chara": "Bedman",
-        "input": "j.P",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Bedman",
-        "input": "j.S",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Bridget",
-        "input": "2D",
-        "startup": 13,
-        "type": "normal"
-    },
-    {
-        "chara": "Bridget",
-        "input": "2H",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Bridget",
-        "input": "2K",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Bridget",
-        "input": "2P",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Bridget",
-        "input": "2S",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Bridget",
-        "input": "5D",
-        "startup": 20,
-        "type": "normal"
-    },
-    {
-        "chara": "Bridget",
-        "input": "5H",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Bridget",
-        "input": "5K",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Bridget",
-        "input": "5P",
-        "startup": 8,
-        "type": "normal"
-    },
-    {
-        "chara": "Bridget",
-        "input": "6H",
-        "startup": 13,
-        "type": "normal"
-    },
-    {
-        "chara": "Bridget",
-        "input": "6K",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Bridget",
-        "input": "6P",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Bridget",
-        "input": "c.S",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Bridget",
-        "input": "f.S",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Bridget",
-        "input": "H",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Bridget",
-        "input": "j.D",
-        "startup": 15,
-        "type": "normal"
-    },
-    {
-        "chara": "Bridget",
-        "input": "j.H",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Bridget",
-        "input": "j.K",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Bridget",
-        "input": "j.P",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Bridget",
-        "input": "j.S",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Bridget",
-        "input": "S",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Chipp Zanuff",
-        "input": "2D",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Chipp Zanuff",
-        "input": "2H",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Chipp Zanuff",
-        "input": "2K",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Chipp Zanuff",
-        "input": "2P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Chipp Zanuff",
-        "input": "2S",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Chipp Zanuff",
-        "input": "5D",
-        "startup": 20,
-        "type": "normal"
-    },
-    {
-        "chara": "Chipp Zanuff",
-        "input": "5H",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Chipp Zanuff",
-        "input": "5K",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Chipp Zanuff",
-        "input": "5P",
-        "startup": 3,
-        "type": "normal"
-    },
-    {
-        "chara": "Chipp Zanuff",
-        "input": "6H",
-        "startup": 17,
-        "type": "normal"
-    },
-    {
-        "chara": "Chipp Zanuff",
-        "input": "6K",
-        "startup": 20,
-        "type": "normal"
-    },
-    {
-        "chara": "Chipp Zanuff",
-        "input": "6P",
-        "startup": 9,
-        "type": "normal"
-    },
-    {
-        "chara": "Chipp Zanuff",
-        "input": "c.S",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Chipp Zanuff",
-        "input": "f.S",
-        "startup": 9,
-        "type": "normal"
-    },
-    {
-        "chara": "Chipp Zanuff",
-        "input": "j.2K",
-        "startup": 16,
-        "type": "normal"
-    },
-    {
-        "chara": "Chipp Zanuff",
-        "input": "j.D",
-        "startup": 8,
-        "type": "normal"
-    },
-    {
-        "chara": "Chipp Zanuff",
-        "input": "j.H",
-        "startup": 8,
-        "type": "normal"
-    },
-    {
-        "chara": "Chipp Zanuff",
-        "input": "j.K",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Chipp Zanuff",
-        "input": "j.P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Chipp Zanuff",
-        "input": "j.S",
-        "startup": 9,
-        "type": "normal"
-    },
-    {
-        "chara": "Faust",
-        "input": "2D",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Faust",
-        "input": "2H",
-        "startup": 14,
-        "type": "normal"
-    },
-    {
-        "chara": "Faust",
-        "input": "2K",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Faust",
-        "input": "2P",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Faust",
-        "input": "2S",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Faust",
-        "input": "5D",
-        "startup": 20,
-        "type": "normal"
-    },
-    {
-        "chara": "Faust",
-        "input": "5H",
-        "startup": 13,
-        "type": "normal"
-    },
-    {
-        "chara": "Faust",
-        "input": "5HH",
-        "startup": 27,
-        "type": "normal"
-    },
-    {
-        "chara": "Faust",
-        "input": "5K",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Faust",
-        "input": "5P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Faust",
-        "input": "6H",
-        "startup": 25,
-        "type": "normal"
-    },
-    {
-        "chara": "Faust",
-        "input": "6P",
-        "startup": 9,
-        "type": "normal"
-    },
-    {
-        "chara": "Faust",
-        "input": "c.S",
-        "startup": 8,
-        "type": "normal"
-    },
-    {
-        "chara": "Faust",
-        "input": "f.S",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Faust",
-        "input": "j.2K",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Faust",
-        "input": "j.D",
-        "startup": 13,
-        "type": "normal"
-    },
-    {
-        "chara": "Faust",
-        "input": "j.H",
-        "startup": 9,
-        "type": "normal"
-    },
-    {
-        "chara": "Faust",
-        "input": "j.K",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Faust",
-        "input": "j.P",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Faust",
-        "input": "j.S",
-        "startup": 14,
-        "type": "normal"
-    },
-    {
-        "chara": "Giovanna",
-        "input": "2D",
-        "startup": 17,
-        "type": "normal"
-    },
-    {
-        "chara": "Giovanna",
-        "input": "2H",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Giovanna",
-        "input": "2K",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Giovanna",
-        "input": "2P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Giovanna",
-        "input": "2S",
-        "startup": 9,
-        "type": "normal"
-    },
-    {
-        "chara": "Giovanna",
-        "input": "5D",
-        "startup": 20,
-        "type": "normal"
-    },
-    {
-        "chara": "Giovanna",
-        "input": "5H",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Giovanna",
-        "input": "5K",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Giovanna",
-        "input": "5P",
-        "startup": 4,
-        "type": "normal"
-    },
-    {
-        "chara": "Giovanna",
-        "input": "6H",
-        "startup": 17,
-        "type": "normal"
-    },
-    {
-        "chara": "Giovanna",
-        "input": "6HH",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Giovanna",
-        "input": "6HHH",
-        "startup": 13,
-        "type": "normal"
-    },
-    {
-        "chara": "Giovanna",
-        "input": "6P",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Giovanna",
-        "input": "c.S",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Giovanna",
-        "input": "f.S",
-        "startup": 9,
-        "type": "normal"
-    },
-    {
-        "chara": "Giovanna",
-        "input": "j.D",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Giovanna",
-        "input": "j.H",
-        "startup": 8,
-        "type": "normal"
-    },
-    {
-        "chara": "Giovanna",
-        "input": "j.K",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Giovanna",
-        "input": "j.P",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Giovanna",
-        "input": "j.S",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Goldlewis Dickinson",
-        "input": "2D",
-        "startup": 14,
-        "type": "normal"
-    },
-    {
-        "chara": "Goldlewis Dickinson",
-        "input": "2H",
-        "startup": 20,
-        "type": "normal"
-    },
-    {
-        "chara": "Goldlewis Dickinson",
-        "input": "2K",
-        "startup": 8,
-        "type": "normal"
-    },
-    {
-        "chara": "Goldlewis Dickinson",
-        "input": "2P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Goldlewis Dickinson",
-        "input": "2S",
-        "startup": 13,
-        "type": "normal"
-    },
-    {
-        "chara": "Goldlewis Dickinson",
-        "input": "5D",
-        "startup": 20,
-        "type": "normal"
-    },
-    {
-        "chara": "Goldlewis Dickinson",
-        "input": "5H",
-        "startup": 19,
-        "type": "normal"
-    },
-    {
-        "chara": "Goldlewis Dickinson",
-        "input": "5K",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Goldlewis Dickinson",
-        "input": "5P",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Goldlewis Dickinson",
-        "input": "6H",
-        "startup": 25,
-        "type": "normal"
-    },
-    {
-        "chara": "Goldlewis Dickinson",
-        "input": "6P",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Goldlewis Dickinson",
-        "input": "c.S",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Goldlewis Dickinson",
-        "input": "f.S",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Goldlewis Dickinson",
-        "input": "j.D",
-        "startup": 14,
-        "type": "normal"
-    },
-    {
-        "chara": "Goldlewis Dickinson",
-        "input": "j.H",
-        "startup": 15,
-        "type": "normal"
-    },
-    {
-        "chara": "Goldlewis Dickinson",
-        "input": "j.K",
-        "startup": 9,
-        "type": "normal"
-    },
-    {
-        "chara": "Goldlewis Dickinson",
-        "input": "j.P",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Goldlewis Dickinson",
-        "input": "j.S",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Happy Chaos",
-        "input": "2D",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Happy Chaos",
-        "input": "2K",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Happy Chaos",
-        "input": "2P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Happy Chaos",
-        "input": "2S",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Happy Chaos",
-        "input": "5D",
-        "startup": 20,
-        "type": "normal"
-    },
-    {
-        "chara": "Happy Chaos",
-        "input": "5K",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Happy Chaos",
-        "input": "5P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Happy Chaos",
-        "input": "6K",
-        "startup": 16,
-        "type": "normal"
-    },
-    {
-        "chara": "Happy Chaos",
-        "input": "6P",
-        "startup": 9,
-        "type": "normal"
-    },
-    {
-        "chara": "Happy Chaos",
-        "input": "6S",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Happy Chaos",
-        "input": "c.S",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Happy Chaos",
-        "input": "f.S",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Happy Chaos",
-        "input": "j.2K",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Happy Chaos",
-        "input": "j.D",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Happy Chaos",
-        "input": "j.K",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Happy Chaos",
-        "input": "j.P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Happy Chaos",
-        "input": "j.S",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "I-No",
-        "input": "2D",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "I-No",
-        "input": "2H",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "I-No",
-        "input": "2K",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "I-No",
-        "input": "2P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "I-No",
-        "input": "2S",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "I-No",
-        "input": "5D",
-        "startup": 20,
-        "type": "normal"
-    },
-    {
-        "chara": "I-No",
-        "input": "5H",
-        "startup": 15,
-        "type": "normal"
-    },
-    {
-        "chara": "I-No",
-        "input": "5K",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "I-No",
-        "input": "5P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "I-No",
-        "input": "6H",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "I-No",
-        "input": "6P",
-        "startup": 9,
-        "type": "normal"
-    },
-    {
-        "chara": "I-No",
-        "input": "c.S",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "I-No",
-        "input": "f.S",
-        "startup": 13,
-        "type": "normal"
-    },
-    {
-        "chara": "I-No",
-        "input": "j.D",
-        "startup": 16,
-        "type": "normal"
-    },
-    {
-        "chara": "I-No",
-        "input": "j.H",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "I-No",
-        "input": "j.K",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "I-No",
-        "input": "j.P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "I-No",
-        "input": "j.S",
-        "startup": 8,
-        "type": "normal"
-    },
-    {
-        "chara": "Jack-O",
-        "input": "2D",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Jack-O",
-        "input": "2H",
-        "startup": 15,
-        "type": "normal"
-    },
-    {
-        "chara": "Jack-O",
-        "input": "2K",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Jack-O",
-        "input": "2P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Jack-O",
-        "input": "2S",
-        "startup": 9,
-        "type": "normal"
-    },
-    {
-        "chara": "Jack-O",
-        "input": "5D",
-        "startup": 20,
-        "type": "normal"
-    },
-    {
-        "chara": "Jack-O",
-        "input": "5H",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Jack-O",
-        "input": "5K",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Jack-O",
-        "input": "5P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Jack-O",
-        "input": "6H(1)",
-        "startup": 8,
-        "type": "normal"
-    },
-    {
-        "chara": "Jack-O",
-        "input": "6H(2)",
-        "startup": 19,
-        "type": "normal"
-    },
-    {
-        "chara": "Jack-O",
-        "input": "6P",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Jack-O",
-        "input": "c.S",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Jack-O",
-        "input": "f.S",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Jack-O",
-        "input": "j.D",
-        "startup": 21,
-        "type": "normal"
-    },
-    {
-        "chara": "Jack-O",
-        "input": "j.H",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Jack-O",
-        "input": "j.K",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Jack-O",
-        "input": "j.P",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Jack-O",
-        "input": "j.S",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Ky Kiske",
-        "input": "2D",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Ky Kiske",
-        "input": "2H",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Ky Kiske",
-        "input": "2K",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Ky Kiske",
-        "input": "2P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Ky Kiske",
-        "input": "2S",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Ky Kiske",
-        "input": "5D",
-        "startup": 20,
-        "type": "normal"
-    },
-    {
-        "chara": "Ky Kiske",
-        "input": "5H",
-        "startup": 14,
-        "type": "normal"
-    },
-    {
-        "chara": "Ky Kiske",
-        "input": "5K",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Ky Kiske",
-        "input": "5P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Ky Kiske",
-        "input": "6H",
-        "startup": 15,
-        "type": "normal"
-    },
-    {
-        "chara": "Ky Kiske",
-        "input": "6K",
-        "startup": 25,
-        "type": "normal"
-    },
-    {
-        "chara": "Ky Kiske",
-        "input": "6P",
-        "startup": 9,
-        "type": "normal"
-    },
-    {
-        "chara": "Ky Kiske",
-        "input": "c.S",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Ky Kiske",
-        "input": "f.S",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Ky Kiske",
-        "input": "j.D",
-        "startup": 13,
-        "type": "normal"
-    },
-    {
-        "chara": "Ky Kiske",
-        "input": "j.H",
-        "startup": 13,
-        "type": "normal"
-    },
-    {
-        "chara": "Ky Kiske",
-        "input": "j.K",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Ky Kiske",
-        "input": "j.P",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Ky Kiske",
-        "input": "j.S",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Leo Whitefang",
-        "input": "2D",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Leo Whitefang",
-        "input": "2H",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Leo Whitefang",
-        "input": "2K",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Leo Whitefang",
-        "input": "2P",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Leo Whitefang",
-        "input": "2S",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Leo Whitefang",
-        "input": "5D",
-        "startup": 20,
-        "type": "normal"
-    },
-    {
-        "chara": "Leo Whitefang",
-        "input": "5H",
-        "startup": 15,
-        "type": "normal"
-    },
-    {
-        "chara": "Leo Whitefang",
-        "input": "5K",
-        "startup": 9,
-        "type": "normal"
-    },
-    {
-        "chara": "Leo Whitefang",
-        "input": "5P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Leo Whitefang",
-        "input": "6H",
-        "startup": 28,
-        "type": "normal"
-    },
-    {
-        "chara": "Leo Whitefang",
-        "input": "6K",
-        "startup": 14,
-        "type": "normal"
-    },
-    {
-        "chara": "Leo Whitefang",
-        "input": "6P",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Leo Whitefang",
-        "input": "c.S",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Leo Whitefang",
-        "input": "f.S",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Leo Whitefang",
-        "input": "j.D",
-        "startup": 22,
-        "type": "normal"
-    },
-    {
-        "chara": "Leo Whitefang",
-        "input": "j.H",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Leo Whitefang",
-        "input": "j.K",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Leo Whitefang",
-        "input": "j.P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Leo Whitefang",
-        "input": "j.S",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Leo Whitefang",
-        "input": "[s\/h] h\/s",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "May",
-        "input": "2D",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "May",
-        "input": "2H",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "May",
-        "input": "2K",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "May",
-        "input": "2P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "May",
-        "input": "2S",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "May",
-        "input": "3K",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "May",
-        "input": "5D",
-        "startup": 20,
-        "type": "normal"
-    },
-    {
-        "chara": "May",
-        "input": "5H",
-        "startup": 13,
-        "type": "normal"
-    },
-    {
-        "chara": "May",
-        "input": "5K",
-        "startup": 8,
-        "type": "normal"
-    },
-    {
-        "chara": "May",
-        "input": "5P",
-        "startup": 4,
-        "type": "normal"
-    },
-    {
-        "chara": "May",
-        "input": "6H",
-        "startup": 16,
-        "type": "normal"
-    },
-    {
-        "chara": "May",
-        "input": "6K",
-        "startup": 20,
-        "type": "normal"
-    },
-    {
-        "chara": "May",
-        "input": "6P",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "May",
-        "input": "c.S",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "May",
-        "input": "f.S",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "May",
-        "input": "j.2H",
-        "startup": 13,
-        "type": "normal"
-    },
-    {
-        "chara": "May",
-        "input": "j.D",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "May",
-        "input": "j.H",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "May",
-        "input": "j.K",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "May",
-        "input": "j.P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "May",
-        "input": "j.S",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Millia Rage",
-        "input": "2D",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Millia Rage",
-        "input": "2H",
-        "startup": 14,
-        "type": "normal"
-    },
-    {
-        "chara": "Millia Rage",
-        "input": "2K",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Millia Rage",
-        "input": "2P",
-        "startup": 4,
-        "type": "normal"
-    },
-    {
-        "chara": "Millia Rage",
-        "input": "2S",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Millia Rage",
-        "input": "5D",
-        "startup": 20,
-        "type": "normal"
-    },
-    {
-        "chara": "Millia Rage",
-        "input": "5H",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Millia Rage",
-        "input": "5K",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Millia Rage",
-        "input": "5P",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Millia Rage",
-        "input": "6H",
-        "startup": 15,
-        "type": "normal"
-    },
-    {
-        "chara": "Millia Rage",
-        "input": "6K",
-        "startup": 28,
-        "type": "normal"
-    },
-    {
-        "chara": "Millia Rage",
-        "input": "6P",
-        "startup": 9,
-        "type": "normal"
-    },
-    {
-        "chara": "Millia Rage",
-        "input": "c.S",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Millia Rage",
-        "input": "f.S",
-        "startup": 9,
-        "type": "normal"
-    },
-    {
-        "chara": "Millia Rage",
-        "input": "j.D",
-        "startup": 9,
-        "type": "normal"
-    },
-    {
-        "chara": "Millia Rage",
-        "input": "j.H",
-        "startup": 8,
-        "type": "normal"
-    },
-    {
-        "chara": "Millia Rage",
-        "input": "j.K",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Millia Rage",
-        "input": "j.P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Millia Rage",
-        "input": "j.S",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "2D",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "2H Level 1",
-        "startup": 19,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "2H Level 2",
-        "startup": 17,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "2H Level 3",
-        "startup": 15,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "2H Level BR",
-        "startup": 15,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "2K",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "2P",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "2S Level 1",
-        "startup": 12,
-        "type": "normal",
-        "imgName": "2S"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "2S Level 2",
-        "startup": 11,
-        "type": "normal",
-        "imgName": "2S"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "2S Level 3",
-        "startup": 10,
-        "type": "normal",
-        "imgName": "2S"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "2S Level BR",
-        "startup": 10,
-        "type": "normal",
-        "imgName": "2S2"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "5D",
-        "startup": 20,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "5H Level 1",
-        "startup": 20,
-        "type": "normal",
-        "imgName": "5H"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "5H Level 2",
-        "startup": 18,
-        "type": "normal",
-        "imgName": "5H"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "5H Level 3",
-        "startup": 16,
-        "type": "normal",
-        "imgName": "5H"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "5H Level BR",
-        "startup": 16,
-        "type": "normal",
-        "imgName": "5H2"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "5K",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "5P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "6H Level 1",
-        "startup": 17,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "6H Level 2",
-        "startup": 16,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "6H Level 3",
-        "startup": 15,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "6H Level BR",
-        "startup": 15,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "6K",
-        "startup": 15,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "6P",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "c.S",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "f.S Level 1",
-        "startup": 16,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "f.S Level 2",
-        "startup": 14,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "f.S Level 3",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "f.S Level BR",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "f.SS Level 1",
-        "startup": 13,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "f.SS Level 2",
-        "startup": 13,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "f.SS Level 3",
-        "startup": 13,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "f.SS Level BR",
-        "startup": 13,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "f.SSS Level 1",
-        "startup": 14,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "f.SSS Level 2",
-        "startup": 14,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "f.SSS Level 3",
-        "startup": 14,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "f.SSS Level BR",
-        "startup": 14,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "j.D Level 1",
-        "startup": 15,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "j.D Level 2",
-        "startup": 13,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "j.D Level 3",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "j.D Level BR",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "j.H Level 1",
-        "startup": 16,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "j.H Level 2",
-        "startup": 15,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "j.H Level 3",
-        "startup": 14,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "j.H Level BR",
-        "startup": 14,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "j.K",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "j.P",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "j.S Level 1",
-        "startup": 13,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "j.S Level 2",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "j.S Level 3",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Nagoriyuki",
-        "input": "j.S Level BR",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Potemkin",
-        "input": "2D",
-        "startup": 13,
-        "type": "normal"
-    },
-    {
-        "chara": "Potemkin",
-        "input": "2H",
-        "startup": 13,
-        "type": "normal"
-    },
-    {
-        "chara": "Potemkin",
-        "input": "2K",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Potemkin",
-        "input": "2P",
-        "startup": 8,
-        "type": "normal"
-    },
-    {
-        "chara": "Potemkin",
-        "input": "2S",
-        "startup": 14,
-        "type": "normal"
-    },
-    {
-        "chara": "Potemkin",
-        "input": "5D",
-        "startup": 20,
-        "type": "normal"
-    },
-    {
-        "chara": "Potemkin",
-        "input": "5H",
-        "startup": 16,
-        "type": "normal"
-    },
-    {
-        "chara": "Potemkin",
-        "input": "5K",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Potemkin",
-        "input": "5P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Potemkin",
-        "input": "6H",
-        "startup": 23,
-        "type": "normal"
-    },
-    {
-        "chara": "Potemkin",
-        "input": "6K",
-        "startup": 22,
-        "type": "normal"
-    },
-    {
-        "chara": "Potemkin",
-        "input": "6P",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Potemkin",
-        "input": "c.S",
-        "startup": 8,
-        "type": "normal"
-    },
-    {
-        "chara": "Potemkin",
-        "input": "f.S",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Potemkin",
-        "input": "j.D",
-        "startup": 13,
-        "type": "normal"
-    },
-    {
-        "chara": "Potemkin",
-        "input": "j.H",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Potemkin",
-        "input": "j.K",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Potemkin",
-        "input": "j.P",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Potemkin",
-        "input": "j.S",
-        "startup": 13,
-        "type": "normal"
-    },
-    {
-        "chara": "Ramlethal Valentine",
-        "input": "2D",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Ramlethal Valentine",
-        "input": "2H",
-        "startup": 14,
-        "type": "normal"
-    },
-    {
-        "chara": "Ramlethal Valentine",
-        "input": "2K",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Ramlethal Valentine",
-        "input": "2P",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Ramlethal Valentine",
-        "input": "2S",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Ramlethal Valentine",
-        "input": "5D",
-        "startup": 20,
-        "type": "normal"
-    },
-    {
-        "chara": "Ramlethal Valentine",
-        "input": "5H",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Ramlethal Valentine",
-        "input": "5K",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Ramlethal Valentine",
-        "input": "5P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Ramlethal Valentine",
-        "input": "6H",
-        "startup": 18,
-        "type": "normal"
-    },
-    {
-        "chara": "Ramlethal Valentine",
-        "input": "6P",
-        "startup": 9,
-        "type": "normal"
-    },
-    {
-        "chara": "Ramlethal Valentine",
-        "input": "c.S",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Ramlethal Valentine",
-        "input": "f.S",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Ramlethal Valentine",
-        "input": "j.D",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Ramlethal Valentine",
-        "input": "j.H",
-        "startup": 19,
-        "type": "normal"
-    },
-    {
-        "chara": "Ramlethal Valentine",
-        "input": "j.K",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Ramlethal Valentine",
-        "input": "j.P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Ramlethal Valentine",
-        "input": "j.S",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Sin Kiske",
-        "input": "2D",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Sin Kiske",
-        "input": "2H",
-        "startup": 14,
-        "type": "normal"
-    },
-    {
-        "chara": "Sin Kiske",
-        "input": "2K",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Sin Kiske",
-        "input": "2P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Sin Kiske",
-        "input": "2S",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Sin Kiske",
-        "input": "5D",
-        "startup": 20,
-        "type": "normal"
-    },
-    {
-        "chara": "Sin Kiske",
-        "input": "5H",
-        "startup": 16,
-        "type": "normal"
-    },
-    {
-        "chara": "Sin Kiske",
-        "input": "5K",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Sin Kiske",
-        "input": "5P",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Sin Kiske",
-        "input": "6H",
-        "startup": 15,
-        "type": "normal"
-    },
-    {
-        "chara": "Sin Kiske",
-        "input": "6K",
-        "startup": 21,
-        "type": "normal"
-    },
-    {
-        "chara": "Sin Kiske",
-        "input": "6P",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Sin Kiske",
-        "input": "c.S",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Sin Kiske",
-        "input": "f.S",
-        "startup": 13,
-        "type": "normal"
-    },
-    {
-        "chara": "Sin Kiske",
-        "input": "j.D",
-        "startup": 28,
-        "type": "normal"
-    },
-    {
-        "chara": "Sin Kiske",
-        "input": "j.H",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Sin Kiske",
-        "input": "j.K",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Sin Kiske",
-        "input": "j.P",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Sin Kiske",
-        "input": "j.S",
-        "startup": 9,
-        "type": "normal"
-    },
-    {
-        "chara": "Sol Badguy",
-        "input": "2D",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Sol Badguy",
-        "input": "2H",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Sol Badguy",
-        "input": "2K",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Sol Badguy",
-        "input": "2P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Sol Badguy",
-        "input": "2S",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Sol Badguy",
-        "input": "5D",
-        "startup": 20,
-        "type": "normal"
-    },
-    {
-        "chara": "Sol Badguy",
-        "input": "5H",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Sol Badguy",
-        "input": "5K",
-        "startup": 3,
-        "type": "normal"
-    },
-    {
-        "chara": "Sol Badguy",
-        "input": "5P",
-        "startup": 4,
-        "type": "normal"
-    },
-    {
-        "chara": "Sol Badguy",
-        "input": "6H",
-        "startup": 9,
-        "type": "normal"
-    },
-    {
-        "chara": "Sol Badguy",
-        "input": "6P",
-        "startup": 9,
-        "type": "normal"
-    },
-    {
-        "chara": "Sol Badguy",
-        "input": "6S",
-        "startup": 15,
-        "type": "normal"
-    },
-    {
-        "chara": "Sol Badguy",
-        "input": "c.S",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Sol Badguy",
-        "input": "f.S",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Sol Badguy",
-        "input": "j.D",
-        "startup": 9,
-        "type": "normal"
-    },
-    {
-        "chara": "Sol Badguy",
-        "input": "j.H",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Sol Badguy",
-        "input": "j.K",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Sol Badguy",
-        "input": "j.P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Sol Badguy",
-        "input": "j.S",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Testament",
-        "input": "2D",
-        "startup": 14,
-        "type": "normal"
-    },
-    {
-        "chara": "Testament",
-        "input": "2H",
-        "startup": 23,
-        "type": "normal"
-    },
-    {
-        "chara": "Testament",
-        "input": "2K",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Testament",
-        "input": "2P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Testament",
-        "input": "2S",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Testament",
-        "input": "5D",
-        "startup": 20,
-        "type": "normal"
-    },
-    {
-        "chara": "Testament",
-        "input": "5H",
-        "startup": 13,
-        "type": "normal"
-    },
-    {
-        "chara": "Testament",
-        "input": "5K",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Testament",
-        "input": "5P",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Testament",
-        "input": "6H",
-        "startup": 23,
-        "type": "normal"
-    },
-    {
-        "chara": "Testament",
-        "input": "6P",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Testament",
-        "input": "c.S",
-        "startup": 8,
-        "type": "normal"
-    },
-    {
-        "chara": "Testament",
-        "input": "f.S",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Testament",
-        "input": "j.D",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Testament",
-        "input": "j.H",
-        "startup": 13,
-        "type": "normal"
-    },
-    {
-        "chara": "Testament",
-        "input": "j.K",
-        "startup": 8,
-        "type": "normal"
-    },
-    {
-        "chara": "Testament",
-        "input": "j.P",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Testament",
-        "input": "j.S",
-        "startup": 9,
-        "type": "normal"
-    },
-    {
-        "chara": "Zato-1",
-        "input": "2D",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Zato-1",
-        "input": "2H",
-        "startup": 13,
-        "type": "normal"
-    },
-    {
-        "chara": "Zato-1",
-        "input": "2K",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Zato-1",
-        "input": "2P",
-        "startup": 6,
-        "type": "normal"
-    },
-    {
-        "chara": "Zato-1",
-        "input": "2S",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Zato-1",
-        "input": "5D",
-        "startup": 20,
-        "type": "normal"
-    },
-    {
-        "chara": "Zato-1",
-        "input": "5H",
-        "startup": 13,
-        "type": "normal"
-    },
-    {
-        "chara": "Zato-1",
-        "input": "5K",
-        "startup": 8,
-        "type": "normal"
-    },
-    {
-        "chara": "Zato-1",
-        "input": "5P",
-        "startup": 5,
-        "type": "normal"
-    },
-    {
-        "chara": "Zato-1",
-        "input": "6H",
-        "startup": 30,
-        "type": "normal"
-    },
-    {
-        "chara": "Zato-1",
-        "input": "6K",
-        "startup": 28,
-        "type": "normal"
-    },
-    {
-        "chara": "Zato-1",
-        "input": "6P",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Zato-1",
-        "input": "c.S",
-        "startup": 9,
-        "type": "normal"
-    },
-    {
-        "chara": "Zato-1",
-        "input": "f.S",
-        "startup": 10,
-        "type": "normal"
-    },
-    {
-        "chara": "Zato-1",
-        "input": "j.D",
-        "startup": 11,
-        "type": "normal"
-    },
-    {
-        "chara": "Zato-1",
-        "input": "j.H",
-        "startup": 12,
-        "type": "normal"
-    },
-    {
-        "chara": "Zato-1",
-        "input": "j.K",
-        "startup": 7,
-        "type": "normal"
-    },
-    {
-        "chara": "Zato-1",
-        "input": "j.P",
-        "startup": 8,
-        "type": "normal"
-    },
-    {
-        "chara": "Zato-1",
-        "input": "j.S",
-        "startup": 9,
-        "type": "normal"
-    }
+  {
+    "chara": "Anji Mito",
+    "input": "2D",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Anji Mito",
+    "input": "2H",
+    "startup": 22,
+    "type": "normal"
+  },
+  {
+    "chara": "Anji Mito",
+    "input": "2K",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Anji Mito",
+    "input": "2P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Anji Mito",
+    "input": "2S",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Anji Mito",
+    "input": "5D",
+    "startup": 20,
+    "type": "normal"
+  },
+  {
+    "chara": "Anji Mito",
+    "input": "5H",
+    "startup": 15,
+    "type": "normal"
+  },
+  {
+    "chara": "Anji Mito",
+    "input": "5K",
+    "startup": 8,
+    "type": "normal"
+  },
+  {
+    "chara": "Anji Mito",
+    "input": "5P",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Anji Mito",
+    "input": "6H",
+    "startup": 16,
+    "type": "normal"
+  },
+  {
+    "chara": "Anji Mito",
+    "input": "6P",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Anji Mito",
+    "input": "c.S",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Anji Mito",
+    "input": "f.S",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Anji Mito",
+    "input": "j.D",
+    "startup": 8,
+    "type": "normal"
+  },
+  {
+    "chara": "Anji Mito",
+    "input": "j.H",
+    "startup": 13,
+    "type": "normal"
+  },
+  {
+    "chara": "Anji Mito",
+    "input": "j.K",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Anji Mito",
+    "input": "j.P",
+    "startup": 9,
+    "type": "normal"
+  },
+  {
+    "chara": "Anji Mito",
+    "input": "j.S",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Asuka R",
+    "input": "2D",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Asuka R",
+    "input": "2H",
+    "startup": 14,
+    "type": "normal"
+  },
+  {
+    "chara": "Asuka R",
+    "input": "2K",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Asuka R",
+    "input": "2P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Asuka R",
+    "input": "2S",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Asuka R",
+    "input": "5D",
+    "startup": 20,
+    "type": "normal"
+  },
+  {
+    "chara": "Asuka R",
+    "input": "5H",
+    "startup": 15,
+    "type": "normal"
+  },
+  {
+    "chara": "Asuka R",
+    "input": "5K",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Asuka R",
+    "input": "5P",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Asuka R",
+    "input": "6H",
+    "startup": 25,
+    "type": "normal"
+  },
+  {
+    "chara": "Asuka R",
+    "input": "6K",
+    "startup": 14,
+    "type": "normal"
+  },
+  {
+    "chara": "Asuka R",
+    "input": "6P",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Asuka R",
+    "input": "c.S",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Asuka R",
+    "input": "f.S",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Asuka R",
+    "input": "j.D",
+    "startup": 14,
+    "type": "normal"
+  },
+  {
+    "chara": "Asuka R",
+    "input": "j.H",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Asuka R",
+    "input": "j.K",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Asuka R",
+    "input": "j.P",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Asuka R",
+    "input": "j.S",
+    "startup": 9,
+    "type": "normal"
+  },
+  {
+    "chara": "Axl Low",
+    "input": "2D",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Axl Low",
+    "input": "2H",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Axl Low",
+    "input": "2K",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Axl Low",
+    "input": "2P",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Axl Low",
+    "input": "2S",
+    "startup": 9,
+    "type": "normal"
+  },
+  {
+    "chara": "Axl Low",
+    "input": "5D",
+    "startup": 20,
+    "type": "normal"
+  },
+  {
+    "chara": "Axl Low",
+    "input": "5H",
+    "startup": 16,
+    "type": "normal"
+  },
+  {
+    "chara": "Axl Low",
+    "input": "5K",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Axl Low",
+    "input": "5P",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Axl Low",
+    "input": "6H",
+    "startup": 27,
+    "type": "normal"
+  },
+  {
+    "chara": "Axl Low",
+    "input": "6K",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Axl Low",
+    "input": "6P",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Axl Low",
+    "input": "c.S",
+    "startup": 8,
+    "type": "normal"
+  },
+  {
+    "chara": "Axl Low",
+    "input": "f.S",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Axl Low",
+    "input": "j.D",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Axl Low",
+    "input": "j.H",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Axl Low",
+    "input": "j.K",
+    "startup": 8,
+    "type": "normal"
+  },
+  {
+    "chara": "Axl Low",
+    "input": "j.P",
+    "startup": 9,
+    "type": "normal"
+  },
+  {
+    "chara": "Axl Low",
+    "input": "j.S",
+    "startup": 14,
+    "type": "normal"
+  },
+  {
+    "chara": "Baiken",
+    "input": "2D",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Baiken",
+    "input": "2H",
+    "startup": 17,
+    "type": "normal"
+  },
+  {
+    "chara": "Baiken",
+    "input": "2K",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Baiken",
+    "input": "2P",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Baiken",
+    "input": "2S",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Baiken",
+    "input": "5D",
+    "startup": 20,
+    "type": "normal"
+  },
+  {
+    "chara": "Baiken",
+    "input": "5H",
+    "startup": 13,
+    "type": "normal"
+  },
+  {
+    "chara": "Baiken",
+    "input": "5K",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Baiken",
+    "input": "5P",
+    "startup": 4,
+    "type": "normal"
+  },
+  {
+    "chara": "Baiken",
+    "input": "6H",
+    "startup": 20,
+    "type": "normal"
+  },
+  {
+    "chara": "Baiken",
+    "input": "6K",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Baiken",
+    "input": "6P",
+    "startup": 9,
+    "type": "normal"
+  },
+  {
+    "chara": "Baiken",
+    "input": "c.S",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Baiken",
+    "input": "f.S",
+    "startup": 9,
+    "type": "normal"
+  },
+  {
+    "chara": "Baiken",
+    "input": "j.D",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Baiken",
+    "input": "j.H",
+    "startup": 15,
+    "type": "normal"
+  },
+  {
+    "chara": "Baiken",
+    "input": "j.K",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Baiken",
+    "input": "j.P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Baiken",
+    "input": "j.S",
+    "startup": 8,
+    "type": "normal"
+  },
+  {
+    "chara": "Bedman",
+    "input": "2D",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Bedman",
+    "input": "2H",
+    "startup": 16,
+    "type": "normal"
+  },
+  {
+    "chara": "Bedman",
+    "input": "2K",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Bedman",
+    "input": "2P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Bedman",
+    "input": "2S",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Bedman",
+    "input": "5D",
+    "startup": 20,
+    "type": "normal"
+  },
+  {
+    "chara": "Bedman",
+    "input": "5H",
+    "startup": 13,
+    "type": "normal"
+  },
+  {
+    "chara": "Bedman",
+    "input": "5K",
+    "startup": 8,
+    "type": "normal"
+  },
+  {
+    "chara": "Bedman",
+    "input": "5P",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Bedman",
+    "input": "6H",
+    "startup": 25,
+    "type": "normal"
+  },
+  {
+    "chara": "Bedman",
+    "input": "6P",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Bedman",
+    "input": "c.S",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Bedman",
+    "input": "f.S",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Bedman",
+    "input": "j.D",
+    "startup": 19,
+    "type": "normal"
+  },
+  {
+    "chara": "Bedman",
+    "input": "j.H",
+    "startup": 15,
+    "type": "normal"
+  },
+  {
+    "chara": "Bedman",
+    "input": "j.K",
+    "startup": 8,
+    "type": "normal"
+  },
+  {
+    "chara": "Bedman",
+    "input": "j.P",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Bedman",
+    "input": "j.S",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Bridget",
+    "input": "2D",
+    "startup": 13,
+    "type": "normal"
+  },
+  {
+    "chara": "Bridget",
+    "input": "2H",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Bridget",
+    "input": "2K",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Bridget",
+    "input": "2P",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Bridget",
+    "input": "2S",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Bridget",
+    "input": "5D",
+    "startup": 20,
+    "type": "normal"
+  },
+  {
+    "chara": "Bridget",
+    "input": "5H",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Bridget",
+    "input": "5K",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Bridget",
+    "input": "5P",
+    "startup": 8,
+    "type": "normal"
+  },
+  {
+    "chara": "Bridget",
+    "input": "6H",
+    "startup": 13,
+    "type": "normal"
+  },
+  {
+    "chara": "Bridget",
+    "input": "6K",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Bridget",
+    "input": "6P",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Bridget",
+    "input": "c.S",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Bridget",
+    "input": "f.S",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Bridget",
+    "input": "H",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Bridget",
+    "input": "j.D",
+    "startup": 15,
+    "type": "normal"
+  },
+  {
+    "chara": "Bridget",
+    "input": "j.H",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Bridget",
+    "input": "j.K",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Bridget",
+    "input": "j.P",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Bridget",
+    "input": "j.S",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Bridget",
+    "input": "S",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Chipp Zanuff",
+    "input": "2D",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Chipp Zanuff",
+    "input": "2H",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Chipp Zanuff",
+    "input": "2K",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Chipp Zanuff",
+    "input": "2P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Chipp Zanuff",
+    "input": "2S",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Chipp Zanuff",
+    "input": "5D",
+    "startup": 20,
+    "type": "normal"
+  },
+  {
+    "chara": "Chipp Zanuff",
+    "input": "5H",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Chipp Zanuff",
+    "input": "5K",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Chipp Zanuff",
+    "input": "5P",
+    "startup": 3,
+    "type": "normal"
+  },
+  {
+    "chara": "Chipp Zanuff",
+    "input": "6H",
+    "startup": 17,
+    "type": "normal"
+  },
+  {
+    "chara": "Chipp Zanuff",
+    "input": "6K",
+    "startup": 20,
+    "type": "normal"
+  },
+  {
+    "chara": "Chipp Zanuff",
+    "input": "6P",
+    "startup": 9,
+    "type": "normal"
+  },
+  {
+    "chara": "Chipp Zanuff",
+    "input": "c.S",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Chipp Zanuff",
+    "input": "f.S",
+    "startup": 9,
+    "type": "normal"
+  },
+  {
+    "chara": "Chipp Zanuff",
+    "input": "j.2K",
+    "startup": 16,
+    "type": "normal"
+  },
+  {
+    "chara": "Chipp Zanuff",
+    "input": "j.D",
+    "startup": 8,
+    "type": "normal"
+  },
+  {
+    "chara": "Chipp Zanuff",
+    "input": "j.H",
+    "startup": 8,
+    "type": "normal"
+  },
+  {
+    "chara": "Chipp Zanuff",
+    "input": "j.K",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Chipp Zanuff",
+    "input": "j.P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Chipp Zanuff",
+    "input": "j.S",
+    "startup": 9,
+    "type": "normal"
+  },
+  {
+    "chara": "Faust",
+    "input": "2D",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Faust",
+    "input": "2H",
+    "startup": 14,
+    "type": "normal"
+  },
+  {
+    "chara": "Faust",
+    "input": "2K",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Faust",
+    "input": "2P",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Faust",
+    "input": "2S",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Faust",
+    "input": "5D",
+    "startup": 20,
+    "type": "normal"
+  },
+  {
+    "chara": "Faust",
+    "input": "5H",
+    "startup": 13,
+    "type": "normal"
+  },
+  {
+    "chara": "Faust",
+    "input": "5HH",
+    "startup": 27,
+    "type": "normal"
+  },
+  {
+    "chara": "Faust",
+    "input": "5K",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Faust",
+    "input": "5P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Faust",
+    "input": "6H",
+    "startup": 25,
+    "type": "normal"
+  },
+  {
+    "chara": "Faust",
+    "input": "6P",
+    "startup": 9,
+    "type": "normal"
+  },
+  {
+    "chara": "Faust",
+    "input": "c.S",
+    "startup": 8,
+    "type": "normal"
+  },
+  {
+    "chara": "Faust",
+    "input": "f.S",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Faust",
+    "input": "j.2K",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Faust",
+    "input": "j.D",
+    "startup": 13,
+    "type": "normal"
+  },
+  {
+    "chara": "Faust",
+    "input": "j.H",
+    "startup": 9,
+    "type": "normal"
+  },
+  {
+    "chara": "Faust",
+    "input": "j.K",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Faust",
+    "input": "j.P",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Faust",
+    "input": "j.S",
+    "startup": 14,
+    "type": "normal"
+  },
+  {
+    "chara": "Giovanna",
+    "input": "2D",
+    "startup": 17,
+    "type": "normal"
+  },
+  {
+    "chara": "Giovanna",
+    "input": "2H",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Giovanna",
+    "input": "2K",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Giovanna",
+    "input": "2P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Giovanna",
+    "input": "2S",
+    "startup": 9,
+    "type": "normal"
+  },
+  {
+    "chara": "Giovanna",
+    "input": "5D",
+    "startup": 20,
+    "type": "normal"
+  },
+  {
+    "chara": "Giovanna",
+    "input": "5H",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Giovanna",
+    "input": "5K",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Giovanna",
+    "input": "5P",
+    "startup": 4,
+    "type": "normal"
+  },
+  {
+    "chara": "Giovanna",
+    "input": "6H",
+    "startup": 17,
+    "type": "normal"
+  },
+  {
+    "chara": "Giovanna",
+    "input": "6HH",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Giovanna",
+    "input": "6HHH",
+    "startup": 13,
+    "type": "normal"
+  },
+  {
+    "chara": "Giovanna",
+    "input": "6P",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Giovanna",
+    "input": "c.S",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Giovanna",
+    "input": "f.S",
+    "startup": 9,
+    "type": "normal"
+  },
+  {
+    "chara": "Giovanna",
+    "input": "j.D",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Giovanna",
+    "input": "j.H",
+    "startup": 8,
+    "type": "normal"
+  },
+  {
+    "chara": "Giovanna",
+    "input": "j.K",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Giovanna",
+    "input": "j.P",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Giovanna",
+    "input": "j.S",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Goldlewis Dickinson",
+    "input": "2D",
+    "startup": 14,
+    "type": "normal"
+  },
+  {
+    "chara": "Goldlewis Dickinson",
+    "input": "2H",
+    "startup": 20,
+    "type": "normal"
+  },
+  {
+    "chara": "Goldlewis Dickinson",
+    "input": "2K",
+    "startup": 8,
+    "type": "normal"
+  },
+  {
+    "chara": "Goldlewis Dickinson",
+    "input": "2P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Goldlewis Dickinson",
+    "input": "2S",
+    "startup": 13,
+    "type": "normal"
+  },
+  {
+    "chara": "Goldlewis Dickinson",
+    "input": "5D",
+    "startup": 20,
+    "type": "normal"
+  },
+  {
+    "chara": "Goldlewis Dickinson",
+    "input": "5H",
+    "startup": 19,
+    "type": "normal"
+  },
+  {
+    "chara": "Goldlewis Dickinson",
+    "input": "5K",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Goldlewis Dickinson",
+    "input": "5P",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Goldlewis Dickinson",
+    "input": "6H",
+    "startup": 25,
+    "type": "normal"
+  },
+  {
+    "chara": "Goldlewis Dickinson",
+    "input": "6P",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Goldlewis Dickinson",
+    "input": "c.S",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Goldlewis Dickinson",
+    "input": "f.S",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Goldlewis Dickinson",
+    "input": "j.D",
+    "startup": 14,
+    "type": "normal"
+  },
+  {
+    "chara": "Goldlewis Dickinson",
+    "input": "j.H",
+    "startup": 15,
+    "type": "normal"
+  },
+  {
+    "chara": "Goldlewis Dickinson",
+    "input": "j.K",
+    "startup": 9,
+    "type": "normal"
+  },
+  {
+    "chara": "Goldlewis Dickinson",
+    "input": "j.P",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Goldlewis Dickinson",
+    "input": "j.S",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Happy Chaos",
+    "input": "2D",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Happy Chaos",
+    "input": "2K",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Happy Chaos",
+    "input": "2P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Happy Chaos",
+    "input": "2S",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Happy Chaos",
+    "input": "5D",
+    "startup": 20,
+    "type": "normal"
+  },
+  {
+    "chara": "Happy Chaos",
+    "input": "5K",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Happy Chaos",
+    "input": "5P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Happy Chaos",
+    "input": "6K",
+    "startup": 16,
+    "type": "normal"
+  },
+  {
+    "chara": "Happy Chaos",
+    "input": "6P",
+    "startup": 9,
+    "type": "normal"
+  },
+  {
+    "chara": "Happy Chaos",
+    "input": "6S",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Happy Chaos",
+    "input": "c.S",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Happy Chaos",
+    "input": "f.S",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Happy Chaos",
+    "input": "j.2K",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Happy Chaos",
+    "input": "j.D",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Happy Chaos",
+    "input": "j.K",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Happy Chaos",
+    "input": "j.P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Happy Chaos",
+    "input": "j.S",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "I-No",
+    "input": "2D",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "I-No",
+    "input": "2H",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "I-No",
+    "input": "2K",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "I-No",
+    "input": "2P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "I-No",
+    "input": "2S",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "I-No",
+    "input": "5D",
+    "startup": 20,
+    "type": "normal"
+  },
+  {
+    "chara": "I-No",
+    "input": "5H",
+    "startup": 15,
+    "type": "normal"
+  },
+  {
+    "chara": "I-No",
+    "input": "5K",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "I-No",
+    "input": "5P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "I-No",
+    "input": "6H",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "I-No",
+    "input": "6P",
+    "startup": 9,
+    "type": "normal"
+  },
+  {
+    "chara": "I-No",
+    "input": "c.S",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "I-No",
+    "input": "f.S",
+    "startup": 13,
+    "type": "normal"
+  },
+  {
+    "chara": "I-No",
+    "input": "j.D",
+    "startup": 16,
+    "type": "normal"
+  },
+  {
+    "chara": "I-No",
+    "input": "j.H",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "I-No",
+    "input": "j.K",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "I-No",
+    "input": "j.P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "I-No",
+    "input": "j.S",
+    "startup": 8,
+    "type": "normal"
+  },
+  {
+    "chara": "Jack-O",
+    "input": "2D",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Jack-O",
+    "input": "2H",
+    "startup": 15,
+    "type": "normal"
+  },
+  {
+    "chara": "Jack-O",
+    "input": "2K",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Jack-O",
+    "input": "2P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Jack-O",
+    "input": "2S",
+    "startup": 9,
+    "type": "normal"
+  },
+  {
+    "chara": "Jack-O",
+    "input": "5D",
+    "startup": 20,
+    "type": "normal"
+  },
+  {
+    "chara": "Jack-O",
+    "input": "5H",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Jack-O",
+    "input": "5K",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Jack-O",
+    "input": "5P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Jack-O",
+    "input": "6H(1)",
+    "startup": 8,
+    "type": "normal"
+  },
+  {
+    "chara": "Jack-O",
+    "input": "6H(2)",
+    "startup": 19,
+    "type": "normal"
+  },
+  {
+    "chara": "Jack-O",
+    "input": "6P",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Jack-O",
+    "input": "c.S",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Jack-O",
+    "input": "f.S",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Jack-O",
+    "input": "j.D",
+    "startup": 21,
+    "type": "normal"
+  },
+  {
+    "chara": "Jack-O",
+    "input": "j.H",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Jack-O",
+    "input": "j.K",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Jack-O",
+    "input": "j.P",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Jack-O",
+    "input": "j.S",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Ky Kiske",
+    "input": "2D",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Ky Kiske",
+    "input": "2H",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Ky Kiske",
+    "input": "2K",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Ky Kiske",
+    "input": "2P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Ky Kiske",
+    "input": "2S",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Ky Kiske",
+    "input": "5D",
+    "startup": 20,
+    "type": "normal"
+  },
+  {
+    "chara": "Ky Kiske",
+    "input": "5H",
+    "startup": 14,
+    "type": "normal"
+  },
+  {
+    "chara": "Ky Kiske",
+    "input": "5K",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Ky Kiske",
+    "input": "5P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Ky Kiske",
+    "input": "6H",
+    "startup": 15,
+    "type": "normal"
+  },
+  {
+    "chara": "Ky Kiske",
+    "input": "6K",
+    "startup": 25,
+    "type": "normal"
+  },
+  {
+    "chara": "Ky Kiske",
+    "input": "6P",
+    "startup": 9,
+    "type": "normal"
+  },
+  {
+    "chara": "Ky Kiske",
+    "input": "c.S",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Ky Kiske",
+    "input": "f.S",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Ky Kiske",
+    "input": "j.D",
+    "startup": 13,
+    "type": "normal"
+  },
+  {
+    "chara": "Ky Kiske",
+    "input": "j.H",
+    "startup": 13,
+    "type": "normal"
+  },
+  {
+    "chara": "Ky Kiske",
+    "input": "j.K",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Ky Kiske",
+    "input": "j.P",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Ky Kiske",
+    "input": "j.S",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Leo Whitefang",
+    "input": "2D",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Leo Whitefang",
+    "input": "2H",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Leo Whitefang",
+    "input": "2K",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Leo Whitefang",
+    "input": "2P",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Leo Whitefang",
+    "input": "2S",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Leo Whitefang",
+    "input": "5D",
+    "startup": 20,
+    "type": "normal"
+  },
+  {
+    "chara": "Leo Whitefang",
+    "input": "5H",
+    "startup": 15,
+    "type": "normal"
+  },
+  {
+    "chara": "Leo Whitefang",
+    "input": "5K",
+    "startup": 9,
+    "type": "normal"
+  },
+  {
+    "chara": "Leo Whitefang",
+    "input": "5P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Leo Whitefang",
+    "input": "6H",
+    "startup": 28,
+    "type": "normal"
+  },
+  {
+    "chara": "Leo Whitefang",
+    "input": "6K",
+    "startup": 14,
+    "type": "normal"
+  },
+  {
+    "chara": "Leo Whitefang",
+    "input": "6P",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Leo Whitefang",
+    "input": "c.S",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Leo Whitefang",
+    "input": "f.S",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Leo Whitefang",
+    "input": "j.D",
+    "startup": 22,
+    "type": "normal"
+  },
+  {
+    "chara": "Leo Whitefang",
+    "input": "j.H",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Leo Whitefang",
+    "input": "j.K",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Leo Whitefang",
+    "input": "j.P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Leo Whitefang",
+    "input": "j.S",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Leo Whitefang",
+    "input": "[s\/h] h\/s",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "May",
+    "input": "2D",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "May",
+    "input": "2H",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "May",
+    "input": "2K",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "May",
+    "input": "2P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "May",
+    "input": "2S",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "May",
+    "input": "3K",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "May",
+    "input": "5D",
+    "startup": 20,
+    "type": "normal"
+  },
+  {
+    "chara": "May",
+    "input": "5H",
+    "startup": 13,
+    "type": "normal"
+  },
+  {
+    "chara": "May",
+    "input": "5K",
+    "startup": 8,
+    "type": "normal"
+  },
+  {
+    "chara": "May",
+    "input": "5P",
+    "startup": 4,
+    "type": "normal"
+  },
+  {
+    "chara": "May",
+    "input": "6H",
+    "startup": 16,
+    "type": "normal"
+  },
+  {
+    "chara": "May",
+    "input": "6K",
+    "startup": 20,
+    "type": "normal"
+  },
+  {
+    "chara": "May",
+    "input": "6P",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "May",
+    "input": "c.S",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "May",
+    "input": "f.S",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "May",
+    "input": "j.2H",
+    "startup": 13,
+    "type": "normal"
+  },
+  {
+    "chara": "May",
+    "input": "j.D",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "May",
+    "input": "j.H",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "May",
+    "input": "j.K",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "May",
+    "input": "j.P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "May",
+    "input": "j.S",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Millia Rage",
+    "input": "2D",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Millia Rage",
+    "input": "2H",
+    "startup": 14,
+    "type": "normal"
+  },
+  {
+    "chara": "Millia Rage",
+    "input": "2K",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Millia Rage",
+    "input": "2P",
+    "startup": 4,
+    "type": "normal"
+  },
+  {
+    "chara": "Millia Rage",
+    "input": "2S",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Millia Rage",
+    "input": "5D",
+    "startup": 20,
+    "type": "normal"
+  },
+  {
+    "chara": "Millia Rage",
+    "input": "5H",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Millia Rage",
+    "input": "5K",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Millia Rage",
+    "input": "5P",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Millia Rage",
+    "input": "6H",
+    "startup": 15,
+    "type": "normal"
+  },
+  {
+    "chara": "Millia Rage",
+    "input": "6K",
+    "startup": 28,
+    "type": "normal"
+  },
+  {
+    "chara": "Millia Rage",
+    "input": "6P",
+    "startup": 9,
+    "type": "normal"
+  },
+  {
+    "chara": "Millia Rage",
+    "input": "c.S",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Millia Rage",
+    "input": "f.S",
+    "startup": 9,
+    "type": "normal"
+  },
+  {
+    "chara": "Millia Rage",
+    "input": "j.D",
+    "startup": 9,
+    "type": "normal"
+  },
+  {
+    "chara": "Millia Rage",
+    "input": "j.H",
+    "startup": 8,
+    "type": "normal"
+  },
+  {
+    "chara": "Millia Rage",
+    "input": "j.K",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Millia Rage",
+    "input": "j.P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Millia Rage",
+    "input": "j.S",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "2D",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "2H Level 1",
+    "startup": 19,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "2H Level 2",
+    "startup": 17,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "2H Level 3",
+    "startup": 15,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "2H Level BR",
+    "startup": 15,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "2K",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "2P",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "2S Level 1",
+    "startup": 12,
+    "type": "normal",
+    "imgName": "2S"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "2S Level 2",
+    "startup": 11,
+    "type": "normal",
+    "imgName": "2S"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "2S Level 3",
+    "startup": 10,
+    "type": "normal",
+    "imgName": "2S"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "2S Level BR",
+    "startup": 10,
+    "type": "normal",
+    "imgName": "2S2"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "5D",
+    "startup": 20,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "5H Level 1",
+    "startup": 20,
+    "type": "normal",
+    "imgName": "5H"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "5H Level 2",
+    "startup": 18,
+    "type": "normal",
+    "imgName": "5H"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "5H Level 3",
+    "startup": 16,
+    "type": "normal",
+    "imgName": "5H"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "5H Level BR",
+    "startup": 16,
+    "type": "normal",
+    "imgName": "5H2"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "5K",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "5P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "6H Level 1",
+    "startup": 17,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "6H Level 2",
+    "startup": 16,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "6H Level 3",
+    "startup": 15,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "6H Level BR",
+    "startup": 15,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "6K",
+    "startup": 15,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "6P",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "c.S",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "f.S Level 1",
+    "startup": 16,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "f.S Level 2",
+    "startup": 14,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "f.S Level 3",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "f.S Level BR",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "f.SS Level 1",
+    "startup": 13,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "f.SS Level 2",
+    "startup": 13,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "f.SS Level 3",
+    "startup": 13,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "f.SS Level BR",
+    "startup": 13,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "f.SSS Level 1",
+    "startup": 14,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "f.SSS Level 2",
+    "startup": 14,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "f.SSS Level 3",
+    "startup": 14,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "f.SSS Level BR",
+    "startup": 14,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "j.D Level 1",
+    "startup": 15,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "j.D Level 2",
+    "startup": 13,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "j.D Level 3",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "j.D Level BR",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "j.H Level 1",
+    "startup": 16,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "j.H Level 2",
+    "startup": 15,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "j.H Level 3",
+    "startup": 14,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "j.H Level BR",
+    "startup": 14,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "j.K",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "j.P",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "j.S Level 1",
+    "startup": 13,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "j.S Level 2",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "j.S Level 3",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Nagoriyuki",
+    "input": "j.S Level BR",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Potemkin",
+    "input": "2D",
+    "startup": 13,
+    "type": "normal"
+  },
+  {
+    "chara": "Potemkin",
+    "input": "2H",
+    "startup": 13,
+    "type": "normal"
+  },
+  {
+    "chara": "Potemkin",
+    "input": "2K",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Potemkin",
+    "input": "2P",
+    "startup": 8,
+    "type": "normal"
+  },
+  {
+    "chara": "Potemkin",
+    "input": "2S",
+    "startup": 14,
+    "type": "normal"
+  },
+  {
+    "chara": "Potemkin",
+    "input": "5D",
+    "startup": 20,
+    "type": "normal"
+  },
+  {
+    "chara": "Potemkin",
+    "input": "5H",
+    "startup": 16,
+    "type": "normal"
+  },
+  {
+    "chara": "Potemkin",
+    "input": "5K",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Potemkin",
+    "input": "5P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Potemkin",
+    "input": "6H",
+    "startup": 23,
+    "type": "normal"
+  },
+  {
+    "chara": "Potemkin",
+    "input": "6K",
+    "startup": 22,
+    "type": "normal"
+  },
+  {
+    "chara": "Potemkin",
+    "input": "6P",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Potemkin",
+    "input": "c.S",
+    "startup": 8,
+    "type": "normal"
+  },
+  {
+    "chara": "Potemkin",
+    "input": "f.S",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Potemkin",
+    "input": "j.D",
+    "startup": 13,
+    "type": "normal"
+  },
+  {
+    "chara": "Potemkin",
+    "input": "j.H",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Potemkin",
+    "input": "j.K",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Potemkin",
+    "input": "j.P",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Potemkin",
+    "input": "j.S",
+    "startup": 13,
+    "type": "normal"
+  },
+  {
+    "chara": "Ramlethal Valentine",
+    "input": "2D",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Ramlethal Valentine",
+    "input": "2H",
+    "startup": 14,
+    "type": "normal"
+  },
+  {
+    "chara": "Ramlethal Valentine",
+    "input": "2K",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Ramlethal Valentine",
+    "input": "2P",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Ramlethal Valentine",
+    "input": "2S",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Ramlethal Valentine",
+    "input": "5D",
+    "startup": 20,
+    "type": "normal"
+  },
+  {
+    "chara": "Ramlethal Valentine",
+    "input": "5H",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Ramlethal Valentine",
+    "input": "5K",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Ramlethal Valentine",
+    "input": "5P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Ramlethal Valentine",
+    "input": "6H",
+    "startup": 18,
+    "type": "normal"
+  },
+  {
+    "chara": "Ramlethal Valentine",
+    "input": "6P",
+    "startup": 9,
+    "type": "normal"
+  },
+  {
+    "chara": "Ramlethal Valentine",
+    "input": "c.S",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Ramlethal Valentine",
+    "input": "f.S",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Ramlethal Valentine",
+    "input": "j.D",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Ramlethal Valentine",
+    "input": "j.H",
+    "startup": 19,
+    "type": "normal"
+  },
+  {
+    "chara": "Ramlethal Valentine",
+    "input": "j.K",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Ramlethal Valentine",
+    "input": "j.P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Ramlethal Valentine",
+    "input": "j.S",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Sin Kiske",
+    "input": "2D",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Sin Kiske",
+    "input": "2H",
+    "startup": 14,
+    "type": "normal"
+  },
+  {
+    "chara": "Sin Kiske",
+    "input": "2K",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Sin Kiske",
+    "input": "2P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Sin Kiske",
+    "input": "2S",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Sin Kiske",
+    "input": "5D",
+    "startup": 20,
+    "type": "normal"
+  },
+  {
+    "chara": "Sin Kiske",
+    "input": "5H",
+    "startup": 16,
+    "type": "normal"
+  },
+  {
+    "chara": "Sin Kiske",
+    "input": "5K",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Sin Kiske",
+    "input": "5P",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Sin Kiske",
+    "input": "6H",
+    "startup": 15,
+    "type": "normal"
+  },
+  {
+    "chara": "Sin Kiske",
+    "input": "6K",
+    "startup": 21,
+    "type": "normal"
+  },
+  {
+    "chara": "Sin Kiske",
+    "input": "6P",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Sin Kiske",
+    "input": "c.S",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Sin Kiske",
+    "input": "f.S",
+    "startup": 13,
+    "type": "normal"
+  },
+  {
+    "chara": "Sin Kiske",
+    "input": "j.D",
+    "startup": 28,
+    "type": "normal"
+  },
+  {
+    "chara": "Sin Kiske",
+    "input": "j.H",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Sin Kiske",
+    "input": "j.K",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Sin Kiske",
+    "input": "j.P",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Sin Kiske",
+    "input": "j.S",
+    "startup": 9,
+    "type": "normal"
+  },
+  {
+    "chara": "Sol Badguy",
+    "input": "2D",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Sol Badguy",
+    "input": "2H",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Sol Badguy",
+    "input": "2K",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Sol Badguy",
+    "input": "2P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Sol Badguy",
+    "input": "2S",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Sol Badguy",
+    "input": "5D",
+    "startup": 20,
+    "type": "normal"
+  },
+  {
+    "chara": "Sol Badguy",
+    "input": "5H",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Sol Badguy",
+    "input": "5K",
+    "startup": 3,
+    "type": "normal"
+  },
+  {
+    "chara": "Sol Badguy",
+    "input": "5P",
+    "startup": 4,
+    "type": "normal"
+  },
+  {
+    "chara": "Sol Badguy",
+    "input": "6H",
+    "startup": 9,
+    "type": "normal"
+  },
+  {
+    "chara": "Sol Badguy",
+    "input": "6P",
+    "startup": 9,
+    "type": "normal"
+  },
+  {
+    "chara": "Sol Badguy",
+    "input": "6S",
+    "startup": 15,
+    "type": "normal"
+  },
+  {
+    "chara": "Sol Badguy",
+    "input": "c.S",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Sol Badguy",
+    "input": "f.S",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Sol Badguy",
+    "input": "j.D",
+    "startup": 9,
+    "type": "normal"
+  },
+  {
+    "chara": "Sol Badguy",
+    "input": "j.H",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Sol Badguy",
+    "input": "j.K",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Sol Badguy",
+    "input": "j.P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Sol Badguy",
+    "input": "j.S",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Testament",
+    "input": "2D",
+    "startup": 14,
+    "type": "normal"
+  },
+  {
+    "chara": "Testament",
+    "input": "2H",
+    "startup": 23,
+    "type": "normal"
+  },
+  {
+    "chara": "Testament",
+    "input": "2K",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Testament",
+    "input": "2P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Testament",
+    "input": "2S",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Testament",
+    "input": "5D",
+    "startup": 20,
+    "type": "normal"
+  },
+  {
+    "chara": "Testament",
+    "input": "5H",
+    "startup": 13,
+    "type": "normal"
+  },
+  {
+    "chara": "Testament",
+    "input": "5K",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Testament",
+    "input": "5P",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Testament",
+    "input": "6H",
+    "startup": 23,
+    "type": "normal"
+  },
+  {
+    "chara": "Testament",
+    "input": "6P",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Testament",
+    "input": "c.S",
+    "startup": 8,
+    "type": "normal"
+  },
+  {
+    "chara": "Testament",
+    "input": "f.S",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Testament",
+    "input": "j.D",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Testament",
+    "input": "j.H",
+    "startup": 13,
+    "type": "normal"
+  },
+  {
+    "chara": "Testament",
+    "input": "j.K",
+    "startup": 8,
+    "type": "normal"
+  },
+  {
+    "chara": "Testament",
+    "input": "j.P",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Testament",
+    "input": "j.S",
+    "startup": 9,
+    "type": "normal"
+  },
+  {
+    "chara": "Zato-1",
+    "input": "2D",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Zato-1",
+    "input": "2H",
+    "startup": 13,
+    "type": "normal"
+  },
+  {
+    "chara": "Zato-1",
+    "input": "2K",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Zato-1",
+    "input": "2P",
+    "startup": 6,
+    "type": "normal"
+  },
+  {
+    "chara": "Zato-1",
+    "input": "2S",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Zato-1",
+    "input": "5D",
+    "startup": 20,
+    "type": "normal"
+  },
+  {
+    "chara": "Zato-1",
+    "input": "5H",
+    "startup": 13,
+    "type": "normal"
+  },
+  {
+    "chara": "Zato-1",
+    "input": "5K",
+    "startup": 8,
+    "type": "normal"
+  },
+  {
+    "chara": "Zato-1",
+    "input": "5P",
+    "startup": 5,
+    "type": "normal"
+  },
+  {
+    "chara": "Zato-1",
+    "input": "6H",
+    "startup": 30,
+    "type": "normal"
+  },
+  {
+    "chara": "Zato-1",
+    "input": "6K",
+    "startup": 28,
+    "type": "normal"
+  },
+  {
+    "chara": "Zato-1",
+    "input": "6P",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Zato-1",
+    "input": "c.S",
+    "startup": 9,
+    "type": "normal"
+  },
+  {
+    "chara": "Zato-1",
+    "input": "f.S",
+    "startup": 10,
+    "type": "normal"
+  },
+  {
+    "chara": "Zato-1",
+    "input": "j.D",
+    "startup": 11,
+    "type": "normal"
+  },
+  {
+    "chara": "Zato-1",
+    "input": "j.H",
+    "startup": 12,
+    "type": "normal"
+  },
+  {
+    "chara": "Zato-1",
+    "input": "j.K",
+    "startup": 7,
+    "type": "normal"
+  },
+  {
+    "chara": "Zato-1",
+    "input": "j.P",
+    "startup": 8,
+    "type": "normal"
+  },
+  {
+    "chara": "Zato-1",
+    "input": "j.S",
+    "startup": 9,
+    "type": "normal"
+  }
 ]

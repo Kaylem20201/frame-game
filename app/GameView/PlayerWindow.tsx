@@ -1,24 +1,28 @@
-import './PlayerWindow.css';
+import "./PlayerWindow.css";
 import { Player } from "@/app/lib/interfaces";
-import Image from 'next/image';
+import Image from "next/image";
 
-function PlayerWindow(props: { player: Player | undefined, victor: boolean }) {
-  const name = props.player?.charName?.replace(/ /g, '_');
+function PlayerWindow(props: { player: Player | undefined; victor: boolean }) {
+  const name = props.player?.charName?.replace(/ /g, "_");
   const move = props.player?.moveData?.input;
   const imagePaths = props.player?.moveData?.imagePaths;
 
   function MoveImage() {
-
     console.log(imagePaths);
     const imagePath = imagePaths ? imagePaths[0] : undefined;
     console.log(imagePath);
-    const image = imagePath ? <img src={imagePath} alt={name + " " + move} /> : null
+    const image = imagePath ? (
+      <img src={imagePath} alt={name + " " + move} />
+    ) : null;
 
     return (
-      <div className="moveImage" style={{ backgroundColor: props.victor ? 'green' : 'inherit' }}>
+      <div
+        className="moveImage"
+        style={{ backgroundColor: props.victor ? "green" : "inherit" }}
+      >
         {image}
       </div>
-    )
+    );
   }
 
   return (

@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 import { heroui } from "@heroui/theme";
 
 /** @type {import('tailwindcss').Config} */
@@ -12,5 +12,4 @@ export default {
   },
   darkMode: "class",
   plugins: [heroui()],
-} satisfies Config
-
+} satisfies Config;

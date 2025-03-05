@@ -1,9 +1,7 @@
-import './GameHelp.css'
-import { useState } from 'react'
-import HelpIcon from '../assets/HelpIcon'
-import CloseIcon from '../assets/CloseIcon'
-
-
+import "./GameHelp.css";
+import { useState } from "react";
+import HelpIcon from "../assets/HelpIcon";
+import CloseIcon from "../assets/CloseIcon";
 
 function GameHelp() {
   const [helpDisplay, setHelpDisplay] = useState(false);
@@ -15,7 +13,12 @@ function GameHelp() {
   function HelpWindow() {
     return (
       <div className="helpWindow">
-        <span className="closeButton" onClick={() => { setHelpDisplay(false) }}>
+        <span
+          className="closeButton"
+          onClick={() => {
+            setHelpDisplay(false);
+          }}
+        >
           <CloseIcon />
         </span>
         <div className="helpText">
@@ -23,12 +26,17 @@ function GameHelp() {
           <ul>
             <li>Assume both buttons pressed on the same frame.</li>
             <li>Assume both attacks would hit the opponent.</li>
-            <li>Assume that the attack would hit on the first possible active frame.</li>
+            <li>
+              Assume that the attack would hit on the first possible active
+              frame.
+            </li>
           </ul>
-          <p><strong>Which character lands their attack?</strong></p>
+          <p>
+            <strong>Which character lands their attack?</strong>
+          </p>
         </div>
       </div>
-    )
+    );
   }
 
   return (
@@ -38,7 +46,7 @@ function GameHelp() {
         <HelpIcon />
       </button>
     </div>
-  )
+  );
 }
 
 export default GameHelp;

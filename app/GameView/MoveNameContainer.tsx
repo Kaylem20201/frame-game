@@ -1,18 +1,13 @@
-import './MoveNameContainer.css'
+import "./MoveNameContainer.css";
 import { PlayerOption } from "../lib/enums";
 
 interface MoveNameProps {
-  input1: string | undefined,
-  input2: string | undefined,
-  onUserGuess: (userGuess: PlayerOption) => void
+  input1: string | undefined;
+  input2: string | undefined;
+  onUserGuess: (userGuess: PlayerOption) => void;
 }
 
-function MoveNameContainer({
-  input1,
-  input2,
-  onUserGuess
-}: MoveNameProps) {
-
+function MoveNameContainer({ input1, input2, onUserGuess }: MoveNameProps) {
   function handleClickP1() {
     if (!(input1 && input2)) return;
     onUserGuess(PlayerOption.player1);
@@ -25,14 +20,20 @@ function MoveNameContainer({
 
   return (
     <div className="moveNameContainer">
-      <div className="moveName move1" onClick={handleClickP1}>
-        {input1 ? input1 : 'Loading...'}
+      <div
+        className="moveName move1 border border-black rounded-sm"
+        onClick={handleClickP1}
+      >
+        {input1 ? input1 : "Loading..."}
       </div>
-      <div className="moveName move2" onClick={handleClickP2}>
-        {input2 ? input2 : 'Loading...'}
+      <div
+        className="moveName move2 border border-black rounded-sm"
+        onClick={handleClickP2}
+      >
+        {input2 ? input2 : "Loading..."}
       </div>
     </div>
-  )
+  );
 }
 
 export default MoveNameContainer;

@@ -1,7 +1,7 @@
-'use server';
-import { Matchup, Move, Player } from './interfaces';
-import { getCharacterList, getCharacterMoves } from './fetching';
-import { GameAbbreviations } from './enums';
+"use server";
+import { Matchup, Move, Player } from "./interfaces";
+import { getCharacterList, getCharacterMoves } from "./fetching";
+import { GameAbbreviations } from "./enums";
 
 export async function genNewMatchup(game: GameAbbreviations): Promise<Matchup> {
   const player1prom = genRandomPlayer(game);
@@ -10,11 +10,11 @@ export async function genNewMatchup(game: GameAbbreviations): Promise<Matchup> {
 
   const matchup: Matchup = {
     player1: player1,
-    player2: player2
-  }
+    player2: player2,
+  };
 
   return matchup;
-};
+}
 
 async function genRandomPlayer(game: GameAbbreviations): Promise<Player> {
   const charName = await getRandomCharName(game);
@@ -22,8 +22,8 @@ async function genRandomPlayer(game: GameAbbreviations): Promise<Player> {
 
   return {
     charName,
-    moveData: move
-  }
+    moveData: move,
+  };
 }
 
 async function getRandomCharName(game: GameAbbreviations): Promise<string> {
@@ -32,10 +32,12 @@ async function getRandomCharName(game: GameAbbreviations): Promise<string> {
   return charName;
 }
 
-async function getRandomMove(game: GameAbbreviations, charName: string): Promise<Move> {
+async function getRandomMove(
+  game: GameAbbreviations,
+  charName: string,
+): Promise<Move> {
   const charaMoves = await getCharacterMoves(game, charName);
   if (!charaMoves) throw new Error();
   const resultMove = charaMoves[Math.floor(Math.random() * charaMoves.length)];
   return resultMove;
 }
-
