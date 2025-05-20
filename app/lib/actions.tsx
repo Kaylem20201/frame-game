@@ -17,8 +17,11 @@ export async function genNewMatchup(game: GameAbbreviations): Promise<Matchup> {
 }
 
 async function genRandomPlayer(game: GameAbbreviations): Promise<Player> {
-  const charName = await getRandomCharName(game);
-  const move = await getRandomMove(game, charName);
+  let charName, move;
+  do {
+    charName = await getRandomCharName(game);
+    move = await getRandomMove(game, charName);
+  } while (charName === undefined || move === undefined)
 
   return {
     charName,
@@ -35,9 +38,9 @@ async function getRandomCharName(game: GameAbbreviations): Promise<string> {
 async function getRandomMove(
   game: GameAbbreviations,
   charName: string,
-): Promise<Move> {
+): Promise<Move | undefined> {
   const charaMoves = await getCharacterMoves(game, charName);
-  if (!charaMoves) throw new Error();
+  if (!charaMoves) return undefined;
   const resultMove = charaMoves[Math.floor(Math.random() * charaMoves.length)];
   return resultMove;
 }
