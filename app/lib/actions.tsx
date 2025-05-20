@@ -18,10 +18,14 @@ export async function genNewMatchup(game: GameAbbreviations): Promise<Matchup> {
 
 async function genRandomPlayer(game: GameAbbreviations): Promise<Player> {
   let charName, move;
-  do {
+  let rerolls = 0;
+  while (true) {
     charName = await getRandomCharName(game);
     move = await getRandomMove(game, charName);
-  } while (charName === undefined || move === undefined)
+    if (charName !== undefined && move !== undefined) break;
+    rerolls += 1;
+    if (rerolls >= 10) throw new Error("Error with Dustloop API");
+  }
 
   return {
     charName,
