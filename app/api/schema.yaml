@@ -1,0 +1,58 @@
+openapi: 3.0.4
+info:
+  title: Frame Game API
+  description: |-
+    API to interact with FrameGame functionality
+  version: 3.1.1
+tags:
+  - name: matchup
+    description: Generate matchups with moves
+  - name: character
+    description: Individual character functions
+  - name: move
+    description: Individual move data
+paths:
+  /matchup:
+    get:
+      tags:
+        - matchup
+      summary: Generate a matchup
+      operationId: getMatchup
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Matchup'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Matchup'
+        '404':
+          description: Matchup not found
+        '422':
+          description: Validation exception
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+components:
+  schemas:
+    Matchup:
+      type: object
+      properties:
+        hashId:
+          type: string
+          description: Identifying hash of the unique matchup
+    Error:
+      type: object
+      properties:
+        code:
+          type: string
+        message:
+          type: string
+      required:
+        - code
+        - message
