@@ -1,5 +1,5 @@
 import "./PlayerWindow.css";
-import { Player } from "@/app/lib/interfaces";
+import { Player } from "@/lib/interfaces";
 import Image from "next/image";
 
 function PlayerWindow(props: { player: Player | undefined; victor: boolean }) {

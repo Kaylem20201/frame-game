@@ -1,7 +1,7 @@
 import "./GameHelp.css";
 import { useState } from "react";
-import HelpIcon from "../assets/HelpIcon";
-import CloseIcon from "../assets/CloseIcon";
+import HelpIcon from "@/assets/HelpIcon";
+import CloseIcon from "@/assets/CloseIcon";
 
 function GameHelp() {
   const [helpDisplay, setHelpDisplay] = useState(false);

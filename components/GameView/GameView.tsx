@@ -1,9 +1,9 @@
 "use client";
 
 // import './GameView.css'
-import { GameState } from "../lib/interfaces";
-import { genNewMatchup } from "../lib/actions";
-import { GameAbbreviations, MatchStates, PlayerOption } from "../lib/enums";
+import { GameState } from "@/lib/interfaces";
+import { genNewMatchup } from "@/lib/actions";
+import { GameAbbreviations, MatchStates, PlayerOption } from "@/lib/enums";
 import MoveNameContainer from "./MoveNameContainer";
 import GameEndContainer from "./GameEndContainer";
 import PlayerWindow from "./PlayerWindow";
@@ -19,7 +19,6 @@ const initialGameState: GameState = {
 };
 
 function GameView() {
-  console.log("Hi!");
 
   const [matchup, setMatchup] = useState(initialGameState.matchup);
   const [matchState, setMatchState] = useState(initialGameState.matchState);
@@ -39,7 +38,7 @@ function GameView() {
       });
       setMatchState(MatchStates.active);
     }
-  }, [matchState]);
+  }, [matchState, dustloopGame]);
 
   //When user guesses
   function onUserGuess(userGuess: PlayerOption) {

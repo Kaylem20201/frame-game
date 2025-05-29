@@ -1,5 +1,5 @@
 import "./MoveNameContainer.css";
-import { PlayerOption } from "../lib/enums";
+import { PlayerOption } from "@/lib/enums";
 
 interface MoveNameProps {
   input1: string | undefined;
