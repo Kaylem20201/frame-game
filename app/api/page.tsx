@@ -7,6 +7,8 @@ import fs from "fs";
 let schema = fs.readFileSync(process.cwd() + "/app/api/schema.yaml", "utf8");
 
 function APIWindow() {
+  //NOTE: As of 5/30/25, next in strict mode will put up an error due to Swagger using a deprecated unsafe component 
+  //May be addressed in PR #10373
   return (
     <>
       <SwaggerUI spec={schema} />

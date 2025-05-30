@@ -1,4 +1,3 @@
-import "@/app/globals.css"
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,7 +11,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="h-screen bg-zinc-800">{children}</body>
+      <body className="">{children}</body>
     </html>
   );
 }
