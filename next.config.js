@@ -3,7 +3,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  distDir: "build",
+  distDir: '_next',
   images: {
     remotePatterns: [
       {
