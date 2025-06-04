@@ -3,6 +3,11 @@ import { Matchup, Move, Player } from "./interfaces";
 import { getCharacterList, getCharacterMoves } from "./fetching";
 import { GameAbbreviations } from "./enums";
 
+/**
+ * Returns a Matchup for the specified game
+ * @param {GameAbbreviations} game - Game to generate a matchup from
+ * @returns {Promise<Matchup>}
+ */
 export async function genNewMatchup(game: GameAbbreviations): Promise<Matchup> {
   const player1prom = genRandomPlayer(game);
   const player2prom = genRandomPlayer(game);
@@ -16,6 +21,11 @@ export async function genNewMatchup(game: GameAbbreviations): Promise<Matchup> {
   return matchup;
 }
 
+/**
+ * Returns a random Player object for the specified game
+ * @param {GameAbbreviations} game - Game to generate a matchup from
+ * @returns {Promise<Player>}
+ */
 async function genRandomPlayer(game: GameAbbreviations): Promise<Player> {
   let charName, move;
   let rerolls = 0;
@@ -33,12 +43,23 @@ async function genRandomPlayer(game: GameAbbreviations): Promise<Player> {
   };
 }
 
+/**
+ * Returns a random Character for the specified game
+ * @param {GameAbbreviations} game - Game to generate a matchup from
+ * @returns {Promise<string>}
+ */
 async function getRandomCharName(game: GameAbbreviations): Promise<string> {
   const charNames = await getCharacterList(game);
   const charName = charNames[Math.floor(Math.random() * charNames.length)];
   return charName;
 }
 
+/**
+ * Returns a random move for the specified character
+ * @param {GameAbbreviations} game - Game to generate a matchup from
+ * @param {string} charName - Character who the move belongs to
+ * @returns {Promise<Move | undefined>}
+ */
 async function getRandomMove(
   game: GameAbbreviations,
   charName: string,
