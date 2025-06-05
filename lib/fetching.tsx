@@ -124,7 +124,7 @@ export async function getCharacterMoves(
     const move: Move = {
       startup: moveData.startup,
       input: moveData.input,
-      type: moveData.input,
+      type: moveData.type,
       imagePaths: fullImagePaths,
     };
     moveList.push(move);
