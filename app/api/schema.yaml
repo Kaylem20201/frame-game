@@ -43,9 +43,16 @@ components:
     Matchup:
       type: object
       properties:
-        hashId:
-          type: string
-          description: Identifying hash of the unique matchup
+        player1:
+          type: object
+          description: Player 1 object
+          schema:
+            $ref: "#/components/schemas/Player"
+        player2:
+          type: object
+          description: Player 2 object
+          schema:
+            $ref: "#/components/schemas/Player"
     Error:
       type: object
       properties:
