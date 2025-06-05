@@ -64,6 +64,23 @@ components:
           description: Data of Player's chosen Move
           schema:
             $ref: "#/components/schemas/Move"
+    Move:
+      type: object
+      properties:
+        input: 
+          type: string
+          description: String representation of the move's input (i.e. 236H)
+        type:
+          type: string
+          description: Type of given move from wiki (e.g. Normal, Special)
+        startup:
+          type: integer
+          description: Number of startup frames for the move
+        imagePaths:
+          type: array
+          items:
+            type: string
+          description: Array of links to images for move (some moves may have multiple images associated)
     Error:
       type: object
       properties:
