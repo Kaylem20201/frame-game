@@ -4,7 +4,6 @@ import { MatchStates, PlayerOption, GameAbbreviations } from "./enums";
 export interface Player {
   charName: string;
   moveData: Move;
-  imgName?: string;
 }
 
 export interface Move {

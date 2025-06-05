@@ -53,6 +53,17 @@ components:
           description: Player 2 object
           schema:
             $ref: "#/components/schemas/Player"
+    Player:
+      type: object
+      properties:
+        charName:
+          type: string
+          description: Name of Player character
+        moveData:
+          type: object
+          description: Data of Player's chosen Move
+          schema:
+            $ref: "#/components/schemas/Move"
     Error:
       type: object
       properties:
