@@ -25,3 +25,13 @@ export interface GameState {
   userGuess: PlayerOption;
   dustloopGame: GameAbbreviations;
 }
+
+export interface ApiResponse {
+  code: string;
+  content: object;
+}
+
+export interface ApiError {
+  code: string;
+  message: string;
+}
