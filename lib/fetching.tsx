@@ -54,7 +54,6 @@ export async function getCharacterList(
   for (const character of charObject) {
     charNames.push(character.chara);
   }
-  console.log(charNames);
   return charNames;
 }
 
@@ -108,7 +107,6 @@ export async function getCharacterMoves(
 ): Promise<Move[] | undefined> {
   // Returns all moves for a certain character
   const url = await getMovesUrl(game, charName);
-  console.log(url);
   const response = await fetch(url);
   if (!response.ok) {
     console.error(response.text);
