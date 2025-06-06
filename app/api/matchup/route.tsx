@@ -6,10 +6,13 @@ import { ApiResponse, ApiError } from "@/lib/interfaces";
 export async function GET(request: NextRequest): Promise<NextResponse> {
   const ops = request.nextUrl.searchParams;
   const gameParam = ops.get("game");
-  const game =
-    gameParam && gameParam in GameAbbreviations
-      ? (gameParam as GameAbbreviations)
-      : undefined;
+  let game = undefined;
+  for (const knownGame of Object.values(GameAbbreviations)) {
+    if (gameParam === knownGame) {
+      game = gameParam;
+      break;
+    }
+  }
   const query = ops.get("query");
 
   let res;
@@ -17,24 +20,26 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   switch (query) {
     case "random":
     default:
-      res = await reqRandomMatchup(game)
+      res = await reqRandomMatchup(game);
       break;
   }
-  
+
   console.log(res);
   return NextResponse.json(res);
 }
 
-async function reqRandomMatchup(game?: GameAbbreviations): Promise<ApiResponse | ApiError> {
-  if (!game) return {
-    code: "300",
-    message: "No game specified",
-  } as ApiError;
+async function reqRandomMatchup(
+  game?: GameAbbreviations,
+): Promise<ApiResponse | ApiError> {
+  if (!game)
+    return {
+      code: "300",
+      message: "No game specified",
+    } as ApiError;
 
-  const matchup = await actions.genNewMatchup(game)
+  const matchup = await actions.genNewMatchup(game);
   return {
     code: "200",
-    content: matchup
+    content: matchup,
   } as ApiResponse;
-
 }
