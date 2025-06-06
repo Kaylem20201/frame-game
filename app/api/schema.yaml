@@ -67,6 +67,93 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Error"
+  /character:
+    get:
+      tags: 
+        - character
+      summary: Generate a random Player object (character with move) for specified game
+      operationID: getPlayer
+      parameters:
+        - in: query
+          name: game
+          schema:
+            type: string
+          required: true
+          description: Dustloop's abbreviation (e.g. "GGST" for Strive) for the game to pull a character from
+          example: "GGST"
+      responses:
+        '200':
+          description: A randomly generated Player object based on the given parameters
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Player'
+              example:
+                code: "200"
+                content:
+                  charName: "Testament"
+                  moveData:
+                    startup: 8
+                    input: "c.S"
+                    type: "normal"
+                    imagePaths:
+                      0: "https://www.dustloop.com/w/Special:FilePath/GGST_Testament_cS.png"
+        '300':
+          description: Bad Request. Check required parameters.
+        '422':
+          description: Validation exception
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /move:
+    get:
+      tags: 
+        - move
+      summary: Generate a random move for specified game
+      operationID: getMove
+      parameters:
+        - in: query
+          name: game
+          schema:
+            type: string
+          required: true
+          description: Dustloop's abbreviation (e.g. "GGST" for Strive) for the game to pull a character from
+          example: "GGST"
+        - in: query
+          name: charName
+          schema:
+            type: string
+          required: true
+          description: Dustloop's name for the character to pull a move from
+          example: "Testament"
+      responses:
+        '200':
+          description: A randomly chosen Move based on the given parameters
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Move'
+              example:
+                code: "200"
+                content:
+                  startup: 8
+                  input: "c.S"
+                  type: "normal"
+                  imagePaths:
+                    0: "https://www.dustloop.com/w/Special:FilePath/GGST_Testament_cS.png"
+        '300':
+          description: Bad Request. Check required parameters.
+        '422':
+          description: Validation exception
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
 components:
   schemas:
     Matchup:
