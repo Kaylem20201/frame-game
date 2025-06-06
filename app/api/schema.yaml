@@ -4,6 +4,11 @@ info:
   description: |-
     API to interact with FrameGame functionality
   version: 0.1.1
+servers:
+  - url: http://localhost:3000/api
+    description: Local dev staging server
+  - url: ec2-18-225-195-233.us-east-2.compute.amazonaws.com/api
+    description: EC2 test server
 tags:
   - name: matchup
     description: Generate matchups with moves
@@ -18,18 +23,42 @@ paths:
         - matchup
       summary: Generate a matchup
       operationId: getMatchup
+      parameters:
+        - in: query
+          name: game
+          schema:
+            type: string
+          required: true
+          description: Dustloop's abbreviation (e.g. "GGST" for Strive) for the game to get a matchup from
+          example: "GGST"
       responses:
         '200':
-          description: Successful operation
+          description: A randomly generated matchup object based on the given parameters
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/Matchup'
-            application/xml:
-              schema:
-                $ref: '#/components/schemas/Matchup'
-        '404':
-          description: Matchup not found
+              example:
+                code: "200"
+                content:
+                  player1:
+                    charName: "Testament"
+                    moveData:
+                      startup: 8
+                      input: "c.S"
+                      type: "normal"
+                      imagePaths:
+                        0: "https://www.dustloop.com/w/Special:FilePath/GGST_Testament_cS.png"
+                  player2:
+                    charName: "Ky Kiske"
+                    moveData:
+                      startup: 29
+                      input: "236[D]"
+                      type: "other"
+                      imagePaths:
+                        0: "https://www.dustloop.com/w/Special:FilePath/GGST Ky Kiske 236D.png"
+        '300':
+          description: Bad Request. Check required parameters.
         '422':
           description: Validation exception
         default:
