@@ -47,7 +47,6 @@ function GameView({
     setUserGuess(userGuess);
     calculateVictor();
     setMatchState(MatchStates.end);
-    router.prefetch(`/?game=${game}`);
   }
 
   const resetGame = async () => {
@@ -113,6 +112,7 @@ function GameView({
         <GameHelp />
         {matchState === MatchStates.end ? (
           <GameEndContainer
+            game={game}
             isWinner={userGuess === victor}
             resetGame={resetGame}
           />
