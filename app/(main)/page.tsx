@@ -4,22 +4,26 @@ import { genNewMatchup } from "@/lib/actions";
 import { GameAbbreviations } from "@/lib/enums";
 import { Suspense } from "react";
 
-async function App(searchParams) {
+async function App({
+  searchParams,
+}: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}) {
   const params = await searchParams;
-  let game: GameAbbreviations| undefined = undefined;
+  let game: GameAbbreviations | undefined = undefined;
   for (const knownGame of Object.values(GameAbbreviations)) {
     if (params.game === knownGame) {
       game = params.game;
       break;
     }
   }
-  if (!game) game = GameAbbreviations.Strive
+  if (!game) game = GameAbbreviations.Strive;
   const matchupProm = genNewMatchup(game);
   return (
     <>
       <NavBar />
       <Suspense fallback={<div>Loading...</div>}>
-        <MainViewport game={game} matchupProm={matchupProm}/>
+        <MainViewport game={game} matchupProm={matchupProm} />
       </Suspense>
     </>
   );
