@@ -1,55 +1,61 @@
 "use client";
 
 // import './GameView.css'
-import { GameState } from "@/lib/interfaces";
+import { GameState, Matchup } from "@/lib/interfaces";
 import { genNewMatchup } from "@/lib/actions";
 import { GameAbbreviations, MatchStates, PlayerOption } from "@/lib/enums";
 import MoveNameContainer from "./MoveNameContainer";
 import GameEndContainer from "./GameEndContainer";
 import PlayerWindow from "./PlayerWindow";
-import { useEffect, useState } from "react";
+import { use, useEffect, useState } from "react";
 import GameHelp from "./GameHelp";
+import { useRouter } from "next/navigation";
 
 const initialGameState: GameState = {
-  matchup: undefined,
   matchState: MatchStates.start,
   victor: PlayerOption.na,
   userGuess: PlayerOption.na,
   dustloopGame: GameAbbreviations.Strive,
 };
 
-function GameView() {
+function GameView({
+  game,
+  matchupProm,
+}: {
+  game: GameAbbreviations;
+  matchupProm: Promise<Matchup>;
+}) {
 
-  const [matchup, setMatchup] = useState(initialGameState.matchup);
+  const router = useRouter();
+  const matchup = use(matchupProm);
+
   const [matchState, setMatchState] = useState(initialGameState.matchState);
   const [victor, setVictor] = useState(initialGameState.victor);
   const [userGuess, setUserGuess] = useState(initialGameState.userGuess);
-  const [dustloopGame, setDustloopGame] = useState(
-    initialGameState.dustloopGame,
-  );
+  const [dustloopGame, setDustloopGame] = useState(game);
 
   useEffect(() => {
     if (matchState === MatchStates.start) {
-      setMatchState(MatchStates.loading);
-      genNewMatchup(dustloopGame).then((matchup) => {
-        setMatchup(matchup);
-        setVictor(PlayerOption.na);
-        setUserGuess(PlayerOption.na);
-      });
-      setMatchState(MatchStates.active);
+      setMatchState(MatchStates.ready);
     }
   }, [matchState, dustloopGame]);
 
   //When user guesses
   function onUserGuess(userGuess: PlayerOption) {
+    if (matchState === MatchStates.end) return;
     setMatchState(MatchStates.loading);
     setUserGuess(userGuess);
     calculateVictor();
     setMatchState(MatchStates.end);
+    router.prefetch(`/?game=${game}`);
   }
 
   const resetGame = async () => {
+    //Game state is preserved between redirects, hard reset is necessary
     setMatchState(MatchStates.start);
+    setVictor(initialGameState.victor);
+    setUserGuess(initialGameState.userGuess);
+    router.push(`/?game=${game}`);
   };
 
   function calculateVictor() {

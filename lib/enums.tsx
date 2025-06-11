@@ -4,8 +4,8 @@ export enum GameAbbreviations {
 
 export enum MatchStates {
   start,
-  active,
   loading,
+  ready,
   end,
 }
 

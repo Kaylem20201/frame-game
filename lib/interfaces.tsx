@@ -19,7 +19,6 @@ export interface Matchup {
 }
 
 export interface GameState {
-  matchup: Matchup | undefined;
   matchState: MatchStates;
   victor: PlayerOption;
   userGuess: PlayerOption;

@@ -8,9 +8,7 @@ function PlayerWindow(props: { player: Player | undefined; victor: boolean }) {
   const imagePaths = props.player?.moveData?.imagePaths;
 
   function MoveImage() {
-    console.log(imagePaths);
     const imagePath = imagePaths ? imagePaths[0] : undefined;
-    console.log(imagePath);
     const image = imagePath ? (
       <img src={imagePath} alt={name + " " + move} />
     ) : null;
