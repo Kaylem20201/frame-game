@@ -21,7 +21,6 @@ async function App({
   const matchupProm = genNewMatchup(game);
   return (
     <>
-      <NavBar />
       <Suspense fallback={<div>Loading...</div>}>
         <MainViewport game={game} matchupProm={matchupProm} />
       </Suspense>
