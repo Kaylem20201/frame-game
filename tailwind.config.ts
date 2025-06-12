@@ -6,6 +6,7 @@ export default {
   content: [
     "./app/**/*.{html,js,tsx,ts}",
     "./node_modules/@heroui/theme/dist/components/*.js",
+    "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {},
