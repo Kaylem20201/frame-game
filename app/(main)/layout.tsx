@@ -12,9 +12,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="h-screen bg-zinc-800">
-        <HeroUIProvider>{children}</HeroUIProvider>
+    <html lang="en" className="ggst">
+      <body>
+        <HeroUIProvider>
+          <main>{children}</main>
+        </HeroUIProvider>
       </body>
     </html>
   );
