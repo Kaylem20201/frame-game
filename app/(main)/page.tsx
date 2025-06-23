@@ -1,8 +1,8 @@
 import MainViewport from "@/components/MainViewport";
-import NavBar from "@/components/NavBar";
 import { genNewMatchup } from "@/lib/actions";
 import { GameAbbreviations } from "@/lib/enums";
 import { Suspense } from "react";
+import MenuDrawer from "@/components/MenuDrawer";
 
 async function App({
   searchParams,
@@ -21,6 +21,7 @@ async function App({
   const matchupProm = genNewMatchup(game);
   return (
     <>
+      <MenuDrawer />
       <Suspense fallback={<div>Loading...</div>}>
         <MainViewport game={game} matchupProm={matchupProm} />
       </Suspense>
