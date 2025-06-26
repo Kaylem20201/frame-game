@@ -95,6 +95,7 @@ function GameView({
           {matchup ? (
             <PlayerWindow
               player={matchup.player1}
+              isGameOver={matchState === MatchStates.end}
               victor={victor === PlayerOption.player1 ? true : false}
             />
           ) : null}
@@ -103,12 +104,13 @@ function GameView({
           {matchup ? (
             <PlayerWindow
               player={matchup.player2}
+              isGameOver={matchState === MatchStates.end}
               victor={victor === PlayerOption.player2}
             />
           ) : null}
         </div>
       </div>
-      <div className="interactionContainer text-center h-fit bg-default-300">
+      <div className="interactionContainer text-center h-fit bg-primary-700">
         <GameHelp />
         {matchState === MatchStates.end ? (
           <GameEndContainer
