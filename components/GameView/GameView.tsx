@@ -108,7 +108,7 @@ function GameView({
           ) : null}
         </div>
       </div>
-      <div className="interactionContainer text-center h-fit bg-rose-700">
+      <div className="interactionContainer text-center h-fit bg-default-300">
         <GameHelp />
         {matchState === MatchStates.end ? (
           <GameEndContainer
