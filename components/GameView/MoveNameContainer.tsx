@@ -1,5 +1,6 @@
-import "./MoveNameContainer.css";
+// import "./MoveNameContainer.css";
 import { PlayerOption } from "@/lib/enums";
+import { Button, ButtonGroup } from "@heroui/button"; 
 
 interface MoveNameProps {
   input1: string | undefined;
@@ -19,19 +20,23 @@ function MoveNameContainer({ input1, input2, onUserGuess }: MoveNameProps) {
   }
 
   return (
-    <div className="moveNameContainer">
-      <div
-        className="moveName move1 border border-black rounded-sm"
-        onClick={handleClickP1}
+    <div className="h-max grid grid-cols-2 gap-16 mx-8 my-4">
+      <Button
+        className="text-8xl/normal bg-primary h-max font-sans font-light"
+        variant="solid"
+        fullWidth
+        onPress={handleClickP1}
       >
         {input1 ? input1 : "Loading..."}
-      </div>
-      <div
-        className="moveName move2 border border-black rounded-sm"
-        onClick={handleClickP2}
+      </Button>
+      <Button
+        className="text-8xl/normal bg-primary h-max font-sans font-light"
+        variant="solid"
+        fullWidth
+        onPress={handleClickP2}
       >
         {input2 ? input2 : "Loading..."}
-      </div>
+      </Button>
     </div>
   );
 }
