@@ -22,7 +22,7 @@ function MoveNameContainer({ input1, input2, onUserGuess }: MoveNameProps) {
   return (
     <div className="h-max grid grid-cols-2 gap-16 mx-8 my-4">
       <Button
-        className="text-8xl/normal bg-primary h-max font-sans font-light"
+        className="text-8xl/normal bg-primary hover:bg-primary-400 text-black h-max font-sans font-light"
         variant="solid"
         fullWidth
         onPress={handleClickP1}
@@ -30,7 +30,7 @@ function MoveNameContainer({ input1, input2, onUserGuess }: MoveNameProps) {
         {input1 ? input1 : "Loading..."}
       </Button>
       <Button
-        className="text-8xl/normal bg-primary h-max font-sans font-light"
+        className="text-8xl/normal bg-primary hover:bg-primary-400 text-black h-max font-sans font-light"
         variant="solid"
         fullWidth
         onPress={handleClickP2}
