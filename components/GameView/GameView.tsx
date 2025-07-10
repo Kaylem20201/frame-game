@@ -78,7 +78,7 @@ function GameView({
 
   return (
     <section className="h-full flex flex-col justify-stretch">
-      <div className="titles text-3xl text-red-500 text-center w-full font-bold font-sans uppercase">
+      <div className="titles text-3xl text-primary text-center w-full font-bold font-sans uppercase">
         <h1>Matchup</h1>
         <div className="versus-flex flex flex-row flex-nowrap justify-center">
           <h2 className="charName basis-5/12">

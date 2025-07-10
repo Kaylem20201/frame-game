@@ -11,7 +11,7 @@ async function MainViewport({
   matchupProm: Promise<Matchup>;
 }) {
   return (
-    <div className="MainViewport h-screen mx-0 bg-zinc-800 static">
+    <div className="MainViewport h-screen mx-0 bg-background static">
       <GameView game={game} matchupProm={matchupProm} />
     </div>
   );

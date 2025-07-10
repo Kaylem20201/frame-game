@@ -1,50 +1,37 @@
-import "./GameHelp.css";
-import { useState } from "react";
+import { useDisclosure } from "@heroui/modal";
 import HelpIcon from "@/assets/HelpIcon";
-import CloseIcon from "@/assets/CloseIcon";
+import { Modal, ModalContent, ModalHeader, ModalBody } from "@heroui/modal";
 
 function GameHelp() {
-  const [helpDisplay, setHelpDisplay] = useState(false);
-
-  function toggleHelp() {
-    setHelpDisplay(!helpDisplay);
-  }
-
-  function HelpWindow() {
-    return (
-      <div className="helpWindow">
-        <span
-          className="closeButton"
-          onClick={() => {
-            setHelpDisplay(false);
-          }}
-        >
-          <CloseIcon />
-        </span>
-        <div className="helpText">
-          <h1>Help</h1>
-          <ul>
-            <li>Assume both buttons pressed on the same frame.</li>
-            <li>Assume both attacks would hit the opponent.</li>
-            <li>
-              Assume that the attack would hit on the first possible active
-              frame.
-            </li>
-          </ul>
-          <p>
-            <strong>Which character lands their attack?</strong>
-          </p>
-        </div>
-      </div>
-    );
-  }
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   return (
     <div className="gameHelp">
-      {helpDisplay ? <HelpWindow /> : null}
-      <button className="helpButton" type="button" onClick={toggleHelp}>
+      <button className="hover:invert" onClick={onOpen}>
         <HelpIcon />
       </button>
+      <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
+        <ModalContent>
+          {(onClose) => (
+            <>
+              <ModalHeader className="flex flex-col gap-1 text-secondary">Help</ModalHeader>
+              <ModalBody className="text-secondary">
+                <ul>
+                  <li>Assume both buttons were pressed on the same frame.</li>
+                  <li>Assume both attacks will hit the opponent.</li>
+                  <li>
+                    Assume that the attack will hit on the first possible active
+                    frame.
+                  </li>
+                </ul>
+                <p>
+                  <strong>Which character lands their attack?</strong>
+                </p>
+              </ModalBody>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
     </div>
   );
 }
