@@ -3,12 +3,10 @@ info:
   title: Frame Game API
   description: |-
     API to interact with FrameGame functionality
-  version: 0.1.1
+  version: 0.1.2
 servers:
-  - url: http://localhost:3000/api
-    description: Local dev staging server
-  - url: ec2-18-225-195-233.us-east-2.compute.amazonaws.com/api
-    description: EC2 test server
+  - url: /api
+    description: API server
 tags:
   - name: matchup
     description: Generate matchups with moves
