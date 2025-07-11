@@ -1,25 +1,35 @@
-import { GameAbbreviations } from "@/lib/enums";
-import "./GameEndContainer.css";
-import Link from "next/link";
+import { Button } from "@heroui/button";
+import { Modal, ModalContent, ModalFooter, ModalHeader } from "@heroui/modal";
 
 interface GameEndProps {
-  game: GameAbbreviations;
+  isOpen: boolean;
   isWinner: boolean;
-  resetGame: () => Promise<void>;
+  onReset: () => Promise<void>;
 }
 
-function GameEndContainer({ game, isWinner, resetGame }: GameEndProps) {
+function GameEndContainer(props: GameEndProps) {
+  const { isOpen, isWinner, onReset } = props;
+
+  let bgColor = isWinner ? "bg-success" : "bg-danger";
+
   return (
-    <div className="gameEndContainer">
-      <div className="gameEndPopup">
-        <h1>{isWinner ? "You win!" : "You lose!"}</h1>
-        <Link href={`/?game=${game}`}>
-          <div className="resetButton" onClick={resetGame}>
-            Reset?
-          </div>
-        </Link>
-      </div>
-    </div>
+    <Modal isOpen={isOpen} isDismissable={false} backdrop="transparent">
+      <ModalContent >
+        <ModalHeader className={"flex flex-col rounded-sm text-black " + bgColor}>
+          {isWinner ? "You win!" : "You lose!"}
+        </ModalHeader>
+        <ModalFooter>
+          <>
+            <Button
+              className="bg-secondary text-small w-auto h-auto self-center"
+              onPress={onReset}
+            >
+              Reset?
+            </Button>
+          </>
+        </ModalFooter>
+      </ModalContent>
+    </Modal>
   );
 }
 

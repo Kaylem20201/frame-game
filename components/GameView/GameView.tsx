@@ -33,9 +33,11 @@ function GameView({
   const [victor, setVictor] = useState(initialGameState.victor);
   const [userGuess, setUserGuess] = useState(initialGameState.userGuess);
   const [dustloopGame, setDustloopGame] = useState(game);
+  const [isWinner, setWinner] = useState(false);
 
   useEffect(() => {
     if (matchState === MatchStates.start) {
+      calculateVictor();
       setMatchState(MatchStates.ready);
     }
   }, [matchState, dustloopGame]);
@@ -45,7 +47,7 @@ function GameView({
     if (matchState === MatchStates.end) return;
     setMatchState(MatchStates.loading);
     setUserGuess(userGuess);
-    calculateVictor();
+    setWinner(victor === userGuess);
     setMatchState(MatchStates.end);
   }
 
@@ -96,7 +98,7 @@ function GameView({
             <PlayerWindow
               player={matchup.player1}
               isGameOver={matchState === MatchStates.end}
-              victor={victor === PlayerOption.player1 ? true : false}
+              victor={victor === PlayerOption.player1}
             />
           ) : null}
         </div>
@@ -112,13 +114,7 @@ function GameView({
       </div>
       <div className="interactionContainer text-center h-fit bg-primary-700">
         <GameHelp />
-        {matchState === MatchStates.end ? (
-          <GameEndContainer
-            game={game}
-            isWinner={userGuess === victor}
-            resetGame={resetGame}
-          />
-        ) : null}
+        <GameEndContainer isOpen={matchState === MatchStates.end} isWinner={isWinner} onReset={resetGame} />
         <MoveNameContainer
           input1={matchup ? matchup.player1.moveData.input : "Loading"}
           input2={matchup ? matchup.player2.moveData.input : "Loading"}
