@@ -1,17 +1,17 @@
 // import './MainViewport.css';
 import { Matchup } from "@/lib/interfaces";
 import GameView from "./GameView/GameView";
-import { GameAbbreviations } from "@/lib/enums";
+import { GameAbbreviation } from "@/lib/enums";
 
 async function MainViewport({
   game,
   matchupProm,
 }: {
-  game: GameAbbreviations;
+  game: GameAbbreviation;
   matchupProm: Promise<Matchup>;
 }) {
   return (
-    <div className="MainViewport h-full mx-0 bg-zinc-800">
+    <div className="MainViewport h-screen mx-0 bg-background static">
       <GameView game={game} matchupProm={matchupProm} />
     </div>
   );

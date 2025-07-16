@@ -1,13 +1,13 @@
 import { NextRequest, NextResponse } from "next/server";
 import * as actions from "@/lib/actions";
-import { GameAbbreviations } from "@/lib/enums";
+import { GameAbbreviation } from "@/lib/enums";
 import { ApiResponse, ApiError } from "@/lib/interfaces";
 
 export async function GET(request: NextRequest): Promise<NextResponse> {
   const ops = request.nextUrl.searchParams;
   const gameParam = ops.get("game");
   let game = undefined;
-  for (const knownGame of Object.values(GameAbbreviations)) {
+  for (const knownGame of Object.values(GameAbbreviation)) {
     if (gameParam === knownGame) {
       game = gameParam;
       break;
@@ -29,7 +29,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
 }
 
 async function reqRandomMatchup(
-  game?: GameAbbreviations,
+  game?: GameAbbreviation,
 ): Promise<ApiResponse | ApiError> {
   if (!game)
     return {

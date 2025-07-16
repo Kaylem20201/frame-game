@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction } from "react";
-import { MatchStates, PlayerOption, GameAbbreviations } from "./enums";
+import { MatchState, PlayerOption, GameAbbreviation } from "./enums";
 
 export interface Player {
   charName: string;
@@ -14,15 +14,16 @@ export interface Move {
 }
 
 export interface Matchup {
+  game: GameAbbreviation,
   player1: Player;
   player2: Player;
 }
 
 export interface GameState {
-  matchState: MatchStates;
+  matchState: MatchState;
   victor: PlayerOption;
   userGuess: PlayerOption;
-  dustloopGame: GameAbbreviations;
+  dustloopGame: GameAbbreviation;
 }
 
 export interface ApiResponse {

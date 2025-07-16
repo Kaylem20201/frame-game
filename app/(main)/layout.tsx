@@ -1,4 +1,5 @@
-import "./globals.css"
+import { HeroUIProvider } from "@heroui/react";
+import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,8 +12,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="h-screen bg-zinc-800">{children}</body>
+    <html lang="en" className="ggst">
+      <body>
+        <HeroUIProvider>
+          <main>{children}</main>
+        </HeroUIProvider>
+      </body>
     </html>
   );
 }

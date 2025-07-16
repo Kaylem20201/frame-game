@@ -1,7 +1,7 @@
 "use server";
 
 import { Move } from "./interfaces";
-import { GameAbbreviations } from "./enums";
+import { GameAbbreviation } from "./enums";
 
 const baseQueryUrl =
   "https://www.dustloop.com/wiki/index.php?title=Special:CargoExport";
@@ -26,7 +26,7 @@ export async function buildQuery(
   return baseQueryUrl + "&" + optionsString;
 }
 
-export async function getCharactersUrl(game: GameAbbreviations) {
+export async function getCharactersUrl(game: GameAbbreviation) {
   const options: [string, string][] = [];
   const moveTable = "MoveData_" + game;
   options.push(["tables", moveTable], ["group by", moveTable + ".chara"]);
@@ -40,7 +40,7 @@ export async function getCharactersUrl(game: GameAbbreviations) {
 }
 
 export async function getCharacterList(
-  game: GameAbbreviations,
+  game: GameAbbreviation,
 ): Promise<string[]> {
   // Returns all characters for a certain game
   const url = await getCharactersUrl(game);
@@ -58,7 +58,7 @@ export async function getCharacterList(
 }
 
 export async function getMovesUrl(
-  game: GameAbbreviations,
+  game: GameAbbreviation,
   charName: string,
 ): Promise<string> {
   const options: [string, string][] = [];
@@ -102,7 +102,7 @@ export async function getMovesUrl(
 }
 
 export async function getCharacterMoves(
-  game: GameAbbreviations,
+  game: GameAbbreviation,
   charName: string,
 ): Promise<Move[] | undefined> {
   // Returns all moves for a certain character
