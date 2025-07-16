@@ -14,6 +14,7 @@ export async function genNewMatchup(game: GameAbbreviation): Promise<Matchup> {
   const [player1, player2] = await Promise.all([player1prom, player2prom]);
 
   const matchup: Matchup = {
+    game: game,
     player1: player1,
     player2: player2,
   };

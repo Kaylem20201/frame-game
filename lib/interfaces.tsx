@@ -14,6 +14,7 @@ export interface Move {
 }
 
 export interface Matchup {
+  game: GameAbbreviation,
   player1: Player;
   player2: Player;
 }
