@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import * as actions from "@/lib/actions";
-import { GameAbbreviations } from "@/lib/enums";
+import { GameAbbreviation } from "@/lib/enums";
 import { ApiResponse, ApiError } from "@/lib/interfaces";
 
 export async function GET(request: NextRequest): Promise<NextResponse> {
@@ -8,7 +8,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   const charName = ops.get("charName") ?? undefined;
   const gameParam = ops.get("game");
   let game = undefined;
-  for (const knownGame of Object.values(GameAbbreviations)) {
+  for (const knownGame of Object.values(GameAbbreviation)) {
     if (gameParam === knownGame) {
       game = gameParam;
       break;
@@ -30,7 +30,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
 }
 
 async function reqRandomMove(
-  game?: GameAbbreviations,
+  game?: GameAbbreviation,
   charName?: string
 ): Promise<ApiResponse | ApiError> {
   if (!game)

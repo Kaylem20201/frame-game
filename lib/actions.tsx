@@ -1,14 +1,14 @@
 "use server";
 import { Matchup, Move, Player } from "./interfaces";
 import { getCharacterList, getCharacterMoves } from "./fetching";
-import { GameAbbreviations } from "./enums";
+import { GameAbbreviation } from "./enums";
 
 /**
  * Returns a Matchup for the specified game
- * @param {GameAbbreviations} game - Game to generate a matchup from
+ * @param {GameAbbreviation} game - Game to generate a matchup from
  * @returns {Promise<Matchup>}
  */
-export async function genNewMatchup(game: GameAbbreviations): Promise<Matchup> {
+export async function genNewMatchup(game: GameAbbreviation): Promise<Matchup> {
   const player1prom = genRandomPlayer(game);
   const player2prom = genRandomPlayer(game);
   const [player1, player2] = await Promise.all([player1prom, player2prom]);
@@ -23,10 +23,10 @@ export async function genNewMatchup(game: GameAbbreviations): Promise<Matchup> {
 
 /**
  * Returns a random Player object for the specified game
- * @param {GameAbbreviations} game - Game to generate a matchup from
+ * @param {GameAbbreviation} game - Game to generate a matchup from
  * @returns {Promise<Player>}
  */
-export async function genRandomPlayer(game: GameAbbreviations): Promise<Player> {
+export async function genRandomPlayer(game: GameAbbreviation): Promise<Player> {
   let charName, move;
   let rerolls = 0;
   while (true) {
@@ -45,10 +45,10 @@ export async function genRandomPlayer(game: GameAbbreviations): Promise<Player> 
 
 /**
  * Returns a random Character for the specified game
- * @param {GameAbbreviations} game - Game to generate a matchup from
+ * @param {GameAbbreviation} game - Game to generate a matchup from
  * @returns {Promise<string>}
  */
-export async function getRandomCharName(game: GameAbbreviations): Promise<string> {
+export async function getRandomCharName(game: GameAbbreviation): Promise<string> {
   const charNames = await getCharacterList(game);
   const charName = charNames[Math.floor(Math.random() * charNames.length)];
   return charName;
@@ -56,12 +56,12 @@ export async function getRandomCharName(game: GameAbbreviations): Promise<string
 
 /**
  * Returns a random move for the specified character
- * @param {GameAbbreviations} game - Game to generate a matchup from
+ * @param {GameAbbreviation} game - Game to generate a matchup from
  * @param {string} charName - Character who the move belongs to
  * @returns {Promise<Move | undefined>}
  */
 export async function getRandomMove(
-  game: GameAbbreviations,
+  game: GameAbbreviation,
   charName: string,
 ): Promise<Move | undefined> {
   const charaMoves = await getCharacterMoves(game, charName);

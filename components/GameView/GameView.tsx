@@ -3,7 +3,7 @@
 // import './GameView.css'
 import { GameState, Matchup } from "@/lib/interfaces";
 import { genNewMatchup } from "@/lib/actions";
-import { GameAbbreviations, MatchStates, PlayerOption } from "@/lib/enums";
+import { GameAbbreviation, MatchState, PlayerOption } from "@/lib/enums";
 import MoveNameContainer from "./MoveNameContainer";
 import GameEndContainer from "./GameEndContainer";
 import PlayerWindow from "./PlayerWindow";
@@ -12,17 +12,17 @@ import GameHelp from "./GameHelp";
 import { useRouter } from "next/navigation";
 
 const initialGameState: GameState = {
-  matchState: MatchStates.start,
+  matchState: MatchState.start,
   victor: PlayerOption.na,
   userGuess: PlayerOption.na,
-  dustloopGame: GameAbbreviations.Strive,
+  dustloopGame: GameAbbreviation.Strive,
 };
 
 function GameView({
   game,
   matchupProm,
 }: {
-  game: GameAbbreviations;
+  game: GameAbbreviation;
   matchupProm: Promise<Matchup>;
 }) {
 
@@ -36,24 +36,24 @@ function GameView({
   const [isWinner, setWinner] = useState(false);
 
   useEffect(() => {
-    if (matchState === MatchStates.start) {
+    if (matchState === MatchState.start) {
       calculateVictor();
-      setMatchState(MatchStates.ready);
+      setMatchState(MatchState.ready);
     }
   }, [matchState, dustloopGame]);
 
   //When user guesses
   function onUserGuess(userGuess: PlayerOption) {
-    if (matchState === MatchStates.end) return;
-    setMatchState(MatchStates.loading);
+    if (matchState === MatchState.end) return;
+    setMatchState(MatchState.loading);
     setUserGuess(userGuess);
     setWinner(victor === userGuess);
-    setMatchState(MatchStates.end);
+    setMatchState(MatchState.end);
   }
 
   const resetGame = async () => {
     //Game state is preserved between redirects, hard reset is necessary
-    setMatchState(MatchStates.start);
+    setMatchState(MatchState.start);
     setVictor(initialGameState.victor);
     setUserGuess(initialGameState.userGuess);
     router.push(`/?game=${game}`);
@@ -97,7 +97,7 @@ function GameView({
           {matchup ? (
             <PlayerWindow
               player={matchup.player1}
-              isGameOver={matchState === MatchStates.end}
+              isGameOver={matchState === MatchState.end}
               victor={victor === PlayerOption.player1}
             />
           ) : null}
@@ -106,7 +106,7 @@ function GameView({
           {matchup ? (
             <PlayerWindow
               player={matchup.player2}
-              isGameOver={matchState === MatchStates.end}
+              isGameOver={matchState === MatchState.end}
               victor={victor === PlayerOption.player2}
             />
           ) : null}
@@ -114,7 +114,7 @@ function GameView({
       </div>
       <div className="interactionContainer text-center h-fit bg-primary-700">
         <GameHelp />
-        <GameEndContainer isOpen={matchState === MatchStates.end} isWinner={isWinner} onReset={resetGame} />
+        <GameEndContainer isOpen={matchState === MatchState.end} isWinner={isWinner} onReset={resetGame} />
         <MoveNameContainer
           input1={matchup ? matchup.player1.moveData.input : "Loading"}
           input2={matchup ? matchup.player2.moveData.input : "Loading"}

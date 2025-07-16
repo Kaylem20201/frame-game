@@ -1,8 +1,8 @@
-export enum GameAbbreviations {
+export enum GameAbbreviation {
   Strive = "GGST",
 }
 
-export enum MatchStates {
+export enum MatchState {
   start,
   loading,
   ready,
