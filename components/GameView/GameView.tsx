@@ -10,6 +10,7 @@ import PlayerWindow from "./PlayerWindow";
 import { use, useEffect, useState } from "react";
 import GameHelp from "./GameHelp";
 import { useRouter } from "next/navigation";
+import MenuDrawer from "@/components/MenuDrawer";
 
 const initialGameState: GameState = {
   matchState: MatchState.start,
@@ -51,12 +52,13 @@ function GameView({
     setMatchState(MatchState.end);
   }
 
-  const resetGame = async () => {
+  const resetGame = async (newMatchup?: Matchup) => {
     //Game state is preserved between redirects, hard reset is necessary
+    let newGame = newMatchup?.game || game;
     setMatchState(MatchState.start);
     setVictor(initialGameState.victor);
     setUserGuess(initialGameState.userGuess);
-    router.push(`/?game=${game}`);
+    router.push(`/?game=${newGame}`);
   };
 
   function calculateVictor() {
@@ -79,6 +81,8 @@ function GameView({
   }
 
   return (
+    <>
+    <MenuDrawer game={game} resetGame={resetGame}/>
     <section className="h-full flex flex-col justify-stretch">
       <div className="titles text-3xl text-primary text-center w-full font-bold font-sans uppercase">
         <h1>Matchup</h1>
@@ -122,6 +126,7 @@ function GameView({
         />
       </div>
     </section>
+    </>
   );
 }
 
