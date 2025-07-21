@@ -10,8 +10,11 @@ API available [here](http://ec2-3-138-143-222.us-east-2.compute.amazonaws.com:30
 ## Deploying
 
 `npm i` to install dependencies.
+
 `npm run dev` to run a local test deployment.
+
 `npm run build` for an optimized build, and `npm run start` to deploy.
+
 Prettier is used for formatting.
 
 ## TO-DO
