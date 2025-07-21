@@ -18,6 +18,7 @@ Prettier is used for formatting.
 
 - [x] Host API
 - [x] Add unit tests for consuming Dustloop API
+- [ ] Implement HTTPS
 - [ ] Provide full matchup info+links on game-end
 - [ ] Provide full API options in UI
 - [ ] Implement other games+themes (GBVSR, SF6)
