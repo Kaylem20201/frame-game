@@ -1,6 +1,6 @@
 import { Matchup } from "@/lib/interfaces";
 import { Button } from "@heroui/button";
-import { Modal, ModalContent, ModalFooter, ModalHeader } from "@heroui/modal";
+import { Modal, ModalBody, ModalContent, ModalFooter, ModalHeader } from "@heroui/modal";
 
 interface GameEndProps {
   isOpen: boolean;
@@ -16,12 +16,12 @@ function GameEndContainer(props: GameEndProps) {
   let bgColor = isWinner ? "bg-success" : "bg-danger";
 
   return (
-    <Modal isOpen={isOpen} isDismissable={false} backdrop="transparent">
+    <Modal isOpen={isOpen} isDismissable={false} hideCloseButton backdrop="transparent">
       <ModalContent >
         <ModalHeader className={"flex flex-col rounded-sm text-black " + bgColor}>
           {isWinner ? "You win!" : "You lose!"}
         </ModalHeader>
-        <ModalContent>
+        <ModalBody>
           <div className="grid grid-cols-2 grid-rows-2">
             <div>P1 Move: {props.matchup.player1.moveData.input}</div>
             <div>P2 Move: {props.matchup.player2.moveData.input}</div>
@@ -29,7 +29,7 @@ function GameEndContainer(props: GameEndProps) {
             <div>P1 Startup: {props.matchup.player2.moveData.startup}</div>
             {/*TODO: Provide links back to wiki with original information*/}
           </div>
-        </ModalContent>
+        </ModalBody>
         <ModalFooter>
           <>
             <Button
