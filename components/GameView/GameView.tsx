@@ -26,7 +26,6 @@ function GameView({
   game: GameAbbreviation;
   matchupProm: Promise<Matchup>;
 }) {
-
   const router = useRouter();
   const matchup = use(matchupProm);
 
@@ -82,50 +81,55 @@ function GameView({
 
   return (
     <>
-    <MenuDrawer game={game} resetGame={resetGame}/>
-    <section className="h-full flex flex-col justify-stretch">
-      <div className="titles text-3xl text-primary text-center w-full font-bold font-sans uppercase">
-        <h1>Matchup</h1>
-        <div className="versus-flex flex flex-row flex-nowrap justify-center">
-          <h2 className="charName basis-5/12">
-            {matchup ? matchup.player1.charName.replace(/_/g, " ") : ""}
-          </h2>
-          <h2 className="versus-title w-min italic"> vs </h2>
-          <h2 className="charName basis-5/12">
-            {matchup ? matchup.player2.charName.replace(/_/g, " ") : ""}
-          </h2>
+      <MenuDrawer game={game} resetGame={resetGame} />
+      <section className="h-full flex flex-col justify-stretch">
+        <div className="titles text-3xl text-primary text-center w-full font-bold font-sans uppercase">
+          <h1>Matchup</h1>
+          <div className="versus-flex flex flex-row flex-nowrap justify-center">
+            <h2 className="charName basis-5/12">
+              {matchup ? matchup.player1.charName.replace(/_/g, " ") : ""}
+            </h2>
+            <h2 className="versus-title w-min italic"> vs </h2>
+            <h2 className="charName basis-5/12">
+              {matchup ? matchup.player2.charName.replace(/_/g, " ") : ""}
+            </h2>
+          </div>
         </div>
-      </div>
-      <div className="characterContainer flex-grow flex flex-row flex-nowrap justify-center">
-        <div className="playerOne characterWindow basis-1/2 flex flex-col justify-center">
-          {matchup ? (
-            <PlayerWindow
-              player={matchup.player1}
-              isGameOver={matchState === MatchState.end}
-              victor={victor === PlayerOption.player1}
-            />
-          ) : null}
+        <div className="characterContainer flex-grow flex flex-row flex-nowrap justify-center">
+          <div className="playerOne characterWindow basis-1/2 flex flex-col justify-center">
+            {matchup ? (
+              <PlayerWindow
+                player={matchup.player1}
+                isGameOver={matchState === MatchState.end}
+                victor={victor === PlayerOption.player1}
+              />
+            ) : null}
+          </div>
+          <div className="playerTwo characterWindow basis-1/2 flex flex-col justify-center -scale-x-100">
+            {matchup ? (
+              <PlayerWindow
+                player={matchup.player2}
+                isGameOver={matchState === MatchState.end}
+                victor={victor === PlayerOption.player2}
+              />
+            ) : null}
+          </div>
         </div>
-        <div className="playerTwo characterWindow basis-1/2 flex flex-col justify-center -scale-x-100">
-          {matchup ? (
-            <PlayerWindow
-              player={matchup.player2}
-              isGameOver={matchState === MatchState.end}
-              victor={victor === PlayerOption.player2}
-            />
-          ) : null}
+        <div className="interactionContainer text-center h-fit bg-primary-700">
+          <GameHelp />
+          <GameEndContainer
+            isOpen={matchState === MatchState.end}
+            isWinner={isWinner}
+            matchup={matchup}
+            onReset={resetGame}
+          />
+          <MoveNameContainer
+            input1={matchup ? matchup.player1.moveData.input : "Loading"}
+            input2={matchup ? matchup.player2.moveData.input : "Loading"}
+            onUserGuess={onUserGuess}
+          />
         </div>
-      </div>
-      <div className="interactionContainer text-center h-fit bg-primary-700">
-        <GameHelp />
-        <GameEndContainer isOpen={matchState === MatchState.end} isWinner={isWinner} onReset={resetGame} />
-        <MoveNameContainer
-          input1={matchup ? matchup.player1.moveData.input : "Loading"}
-          input2={matchup ? matchup.player2.moveData.input : "Loading"}
-          onUserGuess={onUserGuess}
-        />
-      </div>
-    </section>
+      </section>
     </>
   );
 }
