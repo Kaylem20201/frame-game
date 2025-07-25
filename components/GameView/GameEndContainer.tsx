@@ -21,13 +21,24 @@ function GameEndContainer(props: GameEndProps) {
         <ModalHeader className={"flex flex-col rounded-sm text-black " + bgColor}>
           {isWinner ? "You win!" : "You lose!"}
         </ModalHeader>
-        <ModalBody>
-          <div className="grid grid-cols-2 grid-rows-2">
-            <div>P1 Move: {props.matchup.player1.moveData.input}</div>
-            <div>P2 Move: {props.matchup.player2.moveData.input}</div>
-            <div>P1 Startup: {props.matchup.player1.moveData.startup}</div>
-            <div>P1 Startup: {props.matchup.player2.moveData.startup}</div>
-            {/*TODO: Provide links back to wiki with original information*/}
+        <ModalBody className="text-white">
+          <div className="flex flex-col text-center flex-nowrap gap-2">
+            <div className="flex flex-row justify-evenly items-center font-bold text-large">
+              {/*TODO: Provide links back to wiki with original information*/}
+              <div className="flex-1">{props.matchup.player1.charName}</div>
+              <div className="flex-1 shrink"></div>
+              <div className="flex-1">{props.matchup.player2.charName}</div>
+            </div>
+            <div className="flex flex-row justify-evenly items-center">
+              <div className="flex-1">{props.matchup.player1.moveData.input}</div>
+              <div className="flex-1">Move</div>
+              <div className="flex-1">{props.matchup.player2.moveData.input}</div>
+            </div>
+            <div className="flex flex-row justify-evenly items-center">
+              <div className="flex-1">{props.matchup.player1.moveData.startup}</div>
+              <div className="flex-1">Startup</div>
+              <div className="flex-1">{props.matchup.player2.moveData.startup}</div>
+            </div>
           </div>
         </ModalBody>
         <ModalFooter>
