@@ -3,9 +3,9 @@
 A game comparing move data from various fighting game characters form Guilty Gear Strive. Data is pulled live from the Dustloop wiki API.
 Built in Next.js and Typescript.
 
-Hosted publically on AWS [here](http://ec2-3-138-143-222.us-east-2.compute.amazonaws.com:3000/).
+Hosted publically on AWS [here](http://ec2-3-145-77-101.us-east-2.compute.amazonaws.com:3000/).
 
-API available [here](http://ec2-3-138-143-222.us-east-2.compute.amazonaws.com:3000/api).
+API available [here](http://ec2-3-145-77-101.us-east-2.compute.amazonaws.com:3000/api).
 
 ## Deploying
 
