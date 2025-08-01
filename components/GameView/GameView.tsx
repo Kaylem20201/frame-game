@@ -2,7 +2,6 @@
 
 // import './GameView.css'
 import { GameState, Matchup } from "@/lib/interfaces";
-import { genNewMatchup } from "@/lib/actions";
 import { GameAbbreviation, MatchState, PlayerOption } from "@/lib/enums";
 import MoveNameContainer from "./MoveNameContainer";
 import GameEndContainer from "./GameEndContainer";
@@ -30,17 +29,17 @@ function GameView({
   const matchup = use(matchupProm);
 
   const [matchState, setMatchState] = useState(initialGameState.matchState);
-  const [victor, setVictor] = useState(initialGameState.victor);
   const [userGuess, setUserGuess] = useState(initialGameState.userGuess);
   const [dustloopGame, setDustloopGame] = useState(game);
   const [isWinner, setWinner] = useState(false);
 
+  const victor = calculateVictor();
+
   useEffect(() => {
     if (matchState === MatchState.start) {
-      calculateVictor();
       setMatchState(MatchState.ready);
     }
-  }, [matchState, dustloopGame]);
+  }, [matchState]);
 
   //When user guesses
   function onUserGuess(userGuess: PlayerOption) {
@@ -54,10 +53,9 @@ function GameView({
   const resetGame = async (newMatchup?: Matchup) => {
     //Game state is preserved between redirects, hard reset is necessary
     let newGame = newMatchup?.game || game;
-    setMatchState(MatchState.start);
-    setVictor(initialGameState.victor);
     setUserGuess(initialGameState.userGuess);
     router.push(`/?game=${newGame}`);
+    setMatchState(MatchState.start);
   };
 
   function calculateVictor() {
@@ -67,16 +65,9 @@ function GameView({
     if (!char1startup || !char2startup)
       throw new Error("Invalid calculateVictor call");
 
-    if (char1startup < char2startup) {
-      setVictor(PlayerOption.player1);
-      return;
-    } else if (char2startup < char1startup) {
-      setVictor(PlayerOption.player2);
-      return;
-    } else {
-      setVictor(PlayerOption.tie);
-      return;
-    }
+    if (char1startup < char2startup) return PlayerOption.player1;
+    if (char2startup < char1startup) return PlayerOption.player2;
+    return PlayerOption.tie;
   }
 
   return (
