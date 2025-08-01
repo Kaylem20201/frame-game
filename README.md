@@ -1,11 +1,11 @@
 # Frame Game
 
-A game comparing move data from various fighting game characters form Guilty Gear Strive. Data is pulled live from the Dustloop wiki API.
+A game comparing move data from various fighting game characters from Guilty Gear Strive. Data is pulled live from the Dustloop wiki API.
 Built in Next.js and Typescript.
 
-Hosted publically on AWS [here](frame-game.net:3000/).
+Hosted publically on AWS [here](http://frame-game.net:3000/).
 
-API available [here](frame-game.net:3000/api).
+API available [here](http://frame-game.net:3000/api).
 
 ## Deploying
 
